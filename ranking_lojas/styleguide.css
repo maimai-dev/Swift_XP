@@ -1,0 +1,21 @@
+:root {
+  --body-body-medium-font-family: "Inter", Helvetica;
+  --body-body-medium-font-weight: 500;
+  --body-body-medium-font-size: 16px;
+  --body-body-medium-letter-spacing: -0.40799999237060547px;
+  --body-body-medium-line-height: 150%;
+  --body-body-medium-font-style: normal;
+  --body-body-bold-font-family: "Inter", Helvetica;
+  --body-body-bold-font-weight: 600;
+  --body-body-bold-font-size: 16px;
+  --body-body-bold-letter-spacing: -0.40799999237060547px;
+  --body-body-bold-line-height: 150%;
+  --body-body-bold-font-style: normal;
+  --number-60: 60px;
+  --color-neutral-50: rgba(160, 164, 176, 1);
+  --color-neutral-90: rgba(10, 2, 3, 1);
+  --color-neutral-20: rgba(242, 244, 247, 1);
+  --color-neutral-90-duplicate: rgba(10, 2, 3, 1);
+  --color-secondary-10: rgba(255, 252, 248, 1);
+  --color-neutral-00: rgba(255, 255, 255, 1);
+}

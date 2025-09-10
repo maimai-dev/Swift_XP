@@ -1,0 +1,805 @@
+.perfil-configuraes {
+  background-color: #fffcf8;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  width: 100vw;
+}
+
+.perfil-configuraes .overlap-wrapper {
+  background-color: #fffcf8;
+  overflow: hidden;
+  width: 391px;
+  height: 844px;
+}
+
+.perfil-configuraes .overlap {
+  position: relative;
+  width: 421px;
+  height: 204px;
+  top: -30px;
+}
+
+.perfil-configuraes .profile {
+  position: absolute;
+  width: 392px;
+  height: 844px;
+  top: 0;
+  left: 0;
+  background-color: var(--color-secondary-10);
+  overflow: hidden;
+}
+
+.perfil-configuraes .frame {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.perfil-configuraes .header-group {
+  position: relative;
+  width: 393px;
+  height: 174px;
+  overflow: hidden;
+  background: linear-gradient(
+    250deg,
+    rgba(79, 40, 0, 1) 0%,
+    rgba(151, 76, 0, 1) 50%,
+    rgba(255, 128, 0, 1) 100%
+  );
+}
+
+.perfil-configuraes .ellipse {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 64px;
+  left: 110px;
+  background-color: #a4640e;
+  border-radius: 60px;
+  filter: blur(165px);
+}
+
+.perfil-configuraes .div {
+  position: absolute;
+  width: 101px;
+  height: 101px;
+  top: 0;
+  left: 320px;
+  background-color: #ff8000;
+  border-radius: 50.5px;
+  filter: blur(100px);
+}
+
+.perfil-configuraes .frame-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.perfil-configuraes .status-bar {
+  position: relative;
+  width: 393px;
+  height: 53px;
+}
+
+.perfil-configuraes .battery {
+  position: absolute;
+  width: 27px;
+  height: 13px;
+  top: 23px;
+  left: 333px;
+}
+
+.perfil-configuraes .overlap-group {
+  position: absolute;
+  width: 25px;
+  height: 13px;
+  top: 0;
+  left: 0;
+  border-radius: 4.3px;
+  border: 1px solid;
+  border-color: var(--color-neutral-00);
+}
+
+.perfil-configuraes .capacity {
+  position: relative;
+  width: 21px;
+  height: 9px;
+  top: 1px;
+  left: 1px;
+  background-color: var(--color-neutral-00);
+  border-radius: 2.5px;
+}
+
+.perfil-configuraes .cap {
+  position: absolute;
+  width: 1px;
+  height: 4px;
+  top: 5px;
+  left: 26px;
+}
+
+.perfil-configuraes .wifi {
+  position: absolute;
+  width: 17px;
+  height: 12px;
+  top: 23px;
+  left: 309px;
+}
+
+.perfil-configuraes .cellular-connection {
+  position: absolute;
+  width: 19px;
+  height: 12px;
+  top: 23px;
+  left: 282px;
+}
+
+.perfil-configuraes .time-style {
+  height: 22px;
+  top: 18px;
+  left: 43px;
+  position: absolute;
+  width: 54px;
+}
+
+.perfil-configuraes .time {
+  top: 0;
+  left: 0;
+  font-family: "SF Pro-Semibold", Helvetica;
+  font-weight: 400;
+  color: var(--color-neutral-00);
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  width: 54px;
+}
+
+.perfil-configuraes .frame-3 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: var(--number-08) var(--number-20) var(--number-12) var(--number-20);
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .avatar {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.perfil-configuraes .frame-4 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .marissa-edward {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--title-title-3-semibold-font-family);
+  font-weight: var(--title-title-3-semibold-font-weight);
+  color: var(--color-primary-10);
+  font-size: var(--title-title-3-semibold-font-size);
+  text-align: center;
+  letter-spacing: var(--title-title-3-semibold-letter-spacing);
+  line-height: var(--title-title-3-semibold-line-height);
+  white-space: nowrap;
+  font-style: var(--title-title-3-semibold-font-style);
+}
+
+.perfil-configuraes .element {
+  position: relative;
+  width: fit-content;
+  font-family: var(--caption-caption-1-reguler-font-family);
+  font-weight: var(--caption-caption-1-reguler-font-weight);
+  color: var(--color-primary-10);
+  font-size: var(--caption-caption-1-reguler-font-size);
+  text-align: center;
+  letter-spacing: var(--caption-caption-1-reguler-letter-spacing);
+  line-height: var(--caption-caption-1-reguler-line-height);
+  white-space: nowrap;
+  font-style: var(--caption-caption-1-reguler-font-style);
+}
+
+.perfil-configuraes .rectangle {
+  position: absolute;
+  width: 393px;
+  height: 28px;
+  top: 176px;
+  left: 0;
+  background-color: var(--color-secondary-10);
+  border-radius: var(--number-16) var(--number-16) 0px 0px;
+}
+
+.perfil-configuraes .profile-content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+  margin-top: -32px;
+}
+
+.perfil-configuraes .div-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .member-points {
+  display: flex;
+  flex-direction: column;
+  width: 393px;
+  height: 111px;
+  align-items: flex-start;
+  gap: 4px;
+  padding: var(--number-12);
+  position: relative;
+  background-color: #ffe4c6;
+  border-radius: var(--number-16) var(--number-16) var(--number-00)
+    var(--number-00);
+}
+
+.perfil-configuraes .frame-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 12px 20px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  border-radius: var(--number-16);
+  border: 1px solid;
+  border-color: var(--color-primary-10);
+  box-shadow: var(--bottom-2);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.perfil-configuraes .frame-6 {
+  display: flex;
+  width: 132px;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  margin-left: -0.5px;
+}
+
+.perfil-configuraes .frame-7 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .tier {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.perfil-configuraes .frame-8 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--body-body-bold-font-family);
+  font-weight: var(--body-body-bold-font-weight);
+  color: var(--color-gold-50);
+  font-size: var(--body-body-bold-font-size);
+  letter-spacing: var(--body-body-bold-letter-spacing);
+  line-height: var(--body-body-bold-line-height);
+  white-space: nowrap;
+  font-style: var(--body-body-bold-font-style);
+}
+
+.perfil-configuraes .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  font-family: var(--caption-caption-2-reguler-font-family);
+  font-weight: var(--caption-caption-2-reguler-font-weight);
+  color: var(--color-neutral-50);
+  font-size: var(--caption-caption-2-reguler-font-size);
+  letter-spacing: var(--caption-caption-2-reguler-letter-spacing);
+  line-height: var(--caption-caption-2-reguler-line-height);
+  white-space: nowrap;
+  font-style: var(--caption-caption-2-reguler-font-style);
+}
+
+.perfil-configuraes .chevron-right {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.perfil-configuraes .rectangle-2 {
+  position: relative;
+  align-self: stretch;
+  width: 2px;
+  background-color: var(--color-neutral-60);
+  border-radius: var(--number-16);
+  opacity: 0.1;
+}
+
+.perfil-configuraes .frame-9 {
+  display: flex;
+  width: 132px;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  margin-right: -0.5px;
+}
+
+.perfil-configuraes .points {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-bottom: -0.5px;
+  margin-left: -4px;
+}
+
+.perfil-configuraes .rectangle-3 {
+  position: relative;
+  width: 393px;
+  height: 38px;
+  margin-top: -22px;
+  background-color: var(--color-secondary-10);
+  border-radius: var(--number-16) var(--number-16) 0px 0px;
+}
+
+.perfil-configuraes .profile-content-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+  margin-top: -20px;
+}
+
+.perfil-configuraes .general {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--number-12) 0px var(--number-12) 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .frame-10 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 0px var(--number-20) 0px var(--number-20);
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--caption-caption-1-medium-font-family);
+  font-weight: var(--caption-caption-1-medium-font-weight);
+  color: var(--color-neutral-50);
+  font-size: var(--caption-caption-1-medium-font-size);
+  letter-spacing: var(--caption-caption-1-medium-letter-spacing);
+  line-height: var(--caption-caption-1-medium-line-height);
+  white-space: nowrap;
+  font-style: var(--caption-caption-1-medium-font-style);
+}
+
+.perfil-configuraes .frame-wrapper {
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 90px;
+  padding: var(--number-16) 0px var(--number-16) 0px;
+  position: relative;
+  flex: 0 0 auto;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: var(--color-neutral-20);
+}
+
+.perfil-configuraes .div-wrapper {
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6px;
+  position: relative;
+}
+
+.perfil-configuraes .frame-11 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .label {
+  color: var(--color-neutral-80);
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: var(--body-body-medium-font-family);
+  font-weight: var(--body-body-medium-font-weight);
+  font-size: var(--body-body-medium-font-size);
+  letter-spacing: var(--body-body-medium-letter-spacing);
+  line-height: var(--body-body-medium-line-height);
+  font-style: var(--body-body-medium-font-style);
+}
+
+.perfil-configuraes .img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.perfil-configuraes .frame-12 {
+  display: flex;
+  flex-direction: column;
+  width: 353px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6px;
+  position: relative;
+  margin-left: -1.5px;
+  margin-right: -1.5px;
+}
+
+.perfil-configuraes .frame-13 {
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 90px;
+  padding: var(--number-16) 0px var(--number-16) 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .divider {
+  display: flex;
+  flex-direction: column;
+  width: 393px;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .rectangle-4 {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(
+    180deg,
+    rgba(242, 244, 247, 1) 0%,
+    rgba(242, 244, 247, 0) 100%
+  );
+}
+
+.perfil-configuraes .rectangle-5 {
+  position: absolute;
+  width: 390px;
+  height: 1px;
+  top: 0;
+  left: 0;
+  background-color: var(--color-neutral-30);
+}
+
+.perfil-configuraes .support {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--number-12) 0px var(--number-12) 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .frame-14 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .frame-15 {
+  display: flex;
+  width: 393px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 90px;
+  padding: var(--number-16) 0px var(--number-16) 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .frame-16 {
+  width: 353px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6px;
+  position: relative;
+}
+
+.perfil-configuraes .label-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 4px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .label-2 {
+  color: var(--color-danger-30);
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: var(--body-body-medium-font-family);
+  font-weight: var(--body-body-medium-font-weight);
+  font-size: var(--body-body-medium-font-size);
+  letter-spacing: var(--body-body-medium-letter-spacing);
+  line-height: var(--body-body-medium-line-height);
+  font-style: var(--body-body-medium-font-style);
+}
+
+.perfil-configuraes .navbar {
+  display: flex;
+  width: 390px;
+  height: 60px;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 4px 8px;
+  position: absolute;
+  top: 784px;
+  left: 0;
+  background-color: var(--color-secondary-10);
+  box-shadow: 0px -0.5px 1.5px #0000001f, 0px 0px 1px #0000000a;
+}
+
+.perfil-configuraes .frame-17 {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  padding: 8px 0px 4px;
+  position: relative;
+  margin-top: -3px;
+}
+
+.perfil-configuraes .home {
+  position: relative;
+  width: fit-content;
+  font-family: var(--caption-caption-2-medium-font-family);
+  font-weight: var(--caption-caption-2-medium-font-weight);
+  color: var(--color-neutral-50-duplicate);
+  font-size: var(--caption-caption-2-medium-font-size);
+  text-align: center;
+  letter-spacing: var(--caption-caption-2-medium-letter-spacing);
+  line-height: var(--caption-caption-2-medium-line-height);
+  white-space: nowrap;
+  font-style: var(--caption-caption-2-medium-font-style);
+}
+
+.perfil-configuraes .reward {
+  position: relative;
+  width: fit-content;
+  margin-left: -10.5px;
+  margin-right: -10.5px;
+  font-family: var(--caption-caption-2-medium-font-family);
+  font-weight: var(--caption-caption-2-medium-font-weight);
+  color: var(--color-neutral-50);
+  font-size: var(--caption-caption-2-medium-font-size);
+  text-align: center;
+  letter-spacing: var(--caption-caption-2-medium-letter-spacing);
+  line-height: var(--caption-caption-2-medium-line-height);
+  white-space: nowrap;
+  font-style: var(--caption-caption-2-medium-font-style);
+}
+
+.perfil-configuraes .mission {
+  position: relative;
+  width: fit-content;
+  font-family: var(--caption-caption-2-medium-font-family);
+  font-weight: var(--caption-caption-2-medium-font-weight);
+  color: var(--color-neutral-50);
+  font-size: var(--caption-caption-2-medium-font-size);
+  text-align: center;
+  letter-spacing: var(--caption-caption-2-medium-letter-spacing);
+  line-height: var(--caption-caption-2-medium-line-height);
+  white-space: nowrap;
+  font-style: var(--caption-caption-2-medium-font-style);
+}
+
+.perfil-configuraes .profile-2 {
+  position: relative;
+  width: fit-content;
+  font-family: var(--caption-caption-2-medium-font-family);
+  font-weight: var(--caption-caption-2-medium-font-weight);
+  color: #ff8000;
+  font-size: var(--caption-caption-2-medium-font-size);
+  text-align: center;
+  letter-spacing: var(--caption-caption-2-medium-letter-spacing);
+  line-height: var(--caption-caption-2-medium-line-height);
+  white-space: nowrap;
+  font-style: var(--caption-caption-2-medium-font-style);
+}
+/* Original CSS code should be injected here */
+
+/* Additional styles for semantic elements and accessibility */
+.perfil-configuraes .frame-6,
+.perfil-configuraes .frame-9,
+.perfil-configuraes .frame-11,
+.perfil-configuraes .frame-12,
+.perfil-configuraes .frame-17,
+.perfil-configuraes .label-2 {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-align: inherit;
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+.perfil-configuraes .frame-6:hover,
+.perfil-configuraes .frame-9:hover,
+.perfil-configuraes .frame-11:hover,
+.perfil-configuraes .frame-12:hover,
+.perfil-configuraes .frame-17:hover,
+.perfil-configuraes .label-2:hover {
+  opacity: 0.8;
+}
+
+.perfil-configuraes .frame-6:focus-visible,
+.perfil-configuraes .frame-9:focus-visible,
+.perfil-configuraes .frame-11:focus-visible,
+.perfil-configuraes .frame-12:focus-visible,
+.perfil-configuraes .frame-17:focus-visible,
+.perfil-configuraes .label-2:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.perfil-configuraes .frame-6:active,
+.perfil-configuraes .frame-9:active,
+.perfil-configuraes .frame-11:active,
+.perfil-configuraes .frame-12:active,
+.perfil-configuraes .frame-17:active,
+.perfil-configuraes .label-2:active {
+  transform: scale(0.98);
+}
+
+/* Ensure buttons maintain their layout properties */
+.perfil-configuraes .frame-6 {
+  display: flex;
+  width: 132px;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  margin-left: -0.5px;
+}
+
+.perfil-configuraes .frame-9 {
+  display: flex;
+  width: 132px;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  margin-right: -0.5px;
+}
+
+.perfil-configuraes .frame-11 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.perfil-configuraes .frame-12 {
+  display: flex;
+  flex-direction: column;
+  width: 353px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6px;
+  position: relative;
+  margin-left: -1.5px;
+  margin-right: -1.5px;
+}
+
+.perfil-configuraes .frame-17 {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  padding: 8px 0px 4px;
+  position: relative;
+  margin-top: -3px;
+}
+
+.perfil-configuraes .label-2 {
+  color: var(--color-danger-30);
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: var(--body-body-medium-font-family);
+  font-weight: var(--body-body-medium-font-weight);
+  font-size: var(--body-body-medium-font-size);
+  letter-spacing: var(--body-body-medium-letter-spacing);
+  line-height: var(--body-body-medium-line-height);
+  font-style: var(--body-body-medium-font-style);
+}
+
+/* Screen reader only content for better accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
