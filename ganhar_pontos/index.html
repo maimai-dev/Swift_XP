@@ -9,147 +9,100 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="ganhar-pontos">
-      <section class="header-group">
-        <img class="background" src="img/background.svg" alt="Background decoration" />
-        <div class="header-navigation">
-          <div class="status-bar" role="banner">
-          <header class="header">
-            <button class="back-button" aria-label="Voltar">
-              <img class="img" src="img/icon24=arrow-left.svg" alt="" />
-            </button>
-            <h1 class="title">Meus Pontos e Recompensas</h1>
-            <button class="more-vertical" aria-label="Mais opções">
-              <div class="frame">
-                <div class="ellipse"></div>
-                <div class="ellipse"></div>
-                <div class="ellipse"></div>
-              </div>
-            </button>
-          </header>
+    <div class="page-container">
+      <header class="points-header">
+        <div class="header-top">
+          <button class="back-button" aria-label="Voltar">
+            <img class="img" src="img/icon24=arrow-left.svg" alt="" />
+          </button>
+          <h1 class="page-title">Meus Pontos e Recompensas</h1>
         </div>
-        <section class="current-point">
-          <div class="div">
-            <div class="frame-2">
-              <img class="points" src="img/points.svg" alt="Ícone de pontos" />
-              <p class="element-points">
-                <span class="text-wrapper">1.500</span>
-                <span class="span">&nbsp;</span>
-                <span class="text-wrapper-2">Pontos</span>
-              </p>
-              <button class="question" aria-label="Informações sobre pontos">
-                <img src="img/icon24=question.svg" alt="" />
-              </button>
+        <div class="points-summary">
+          <div class="points-info">
+            <img class="points-icon" src="img/points.svg" alt="Ícone de pontos" />
+            <p class="points-balance">
+              <span class="points-amount">1.500</span>
+              <span class="points-label">Pontos</span>
+            </p>
+          </div>
+          <p class="points-expiring">200 pontos expirando em 31/12/2025</p>
+        </div>
+      </header>
+
+      <main class="content-body">
+        <nav class="tabs" role="tablist">
+          <button class="tab-button" role="tab" aria-selected="false">
+            <span>Resgatar Pontos</span>
+          </button>
+          <button class="tab-button active" role="tab" aria-selected="true">
+            <span>Ganhar Pontos</span>
+          </button>
+        </nav>
+
+        <section class="missions-grid" aria-labelledby="ganhar-pontos-tab">
+          <article class="mission-card">
+            <div class="mission-card-info">
+              <span class="mission-points">+500 pontos</span>
+              <h3 class="mission-title">Missão Especial: Desafio do Dia D</h3>
             </div>
-            <button class="button">
-              <span class="button-2">Histórico de Pontos</span>
-            </button>
-          </div>
-          <p class="element-points-expiring">200 pontos expirando em 31/12/2025</p>
+            <button class="mission-button">Junte-se à Missão</button>
+          </article>
+          <article class="mission-card">
+            <div class="mission-card-info">
+              <span class="mission-points">+350 pontos</span>
+              <h3 class="mission-title">Juntos Somos Mais Fortes</h3>
+            </div>
+            <button class="mission-button">Junte-se à Missão</button>
+          </article>
+          <article class="mission-card">
+            <div class="mission-card-info">
+              <span class="mission-points">+600 pontos</span>
+              <h3 class="mission-title">Meta de Venda Individual</h3>
+            </div>
+            <button class="mission-button">Junte-se à Missão</button>
+          </article>
+          <article class="mission-card">
+            <div class="mission-card-info">
+              <span class="mission-points">+200 pontos</span>
+              <h3 class="mission-title">Treinamento Relâmpago</h3>
+            </div>
+            <button class="mission-button">Junte-se à Missão</button>
+          </article>
+          <article class="mission-card">
+            <div class="mission-card-info">
+              <span class="mission-points">+700 pontos</span>
+              <h3 class="mission-title">Desafio do Ticket Médio</h3>
+            </div>
+            <button class="mission-button">Junte-se à Missão</button>
+          </article>
+          <article class="mission-card">
+            <div class="mission-card-info">
+              <span class="mission-points">+400 pontos</span>
+              <h3 class="mission-title">Domine o Produto</h3>
+            </div>
+            <button class="mission-button">Junte-se à Missão</button>
+          </article>
         </section>
-      </section>
-      <section class="earn-points">
-        <div class="tabs" role="tablist">
-          <button class="tab-item" role="tab" aria-selected="false" tabindex="-1">
-            <span class="tab">Resgatar Pontos</span>
-          </button>
-          <button class="tab-wrapper" role="tab" aria-selected="true" tabindex="0">
-            <span class="tab-2">Ganhar Pontos</span>
-          </button>
-        </div>
-        <div class="list-missions" role="tabpanel" aria-labelledby="ganhar-pontos-tab">
-          <div class="frame-3">
-            <article class="frame-4">
-              <div class="frame-5">
-                <div class="element-points-wrapper">
-                  <span class="element-points-2">+500 pontos</span>
-                </div>
-                <h3 class="customer">Missão Especial: Desafio do Dia D</h3>
-              </div>
-              <button class="button-wrapper">
-                <span class="button-3">Junte-se à Missão</span>
-              </button>
-            </article>
-            <article class="frame-4">
-              <div class="frame-5">
-                <div class="element-points-wrapper">
-                  <span class="element-points-2">+350 pontos</span>
-                </div>
-                <h3 class="customer">Juntos Somos Mais Fortes</h3>
-              </div>
-              <button class="button-wrapper">
-                <span class="button-3">Junte-se à Missão</span>
-              </button>
-            </article>
-          </div>
-          <div class="frame-3">
-            <article class="frame-4">
-              <div class="frame-5">
-                <div class="element-points-wrapper">
-                  <span class="element-points-2">+600 pontos</span>
-                </div>
-                <h3 class="customer-2">Meta de Venda Individual</h3>
-              </div>
-              <button class="button-wrapper">
-                <span class="button-3">Junte-se à Missão</span>
-              </button>
-            </article>
-            <article class="frame-4">
-              <div class="frame-5">
-                <div class="element-points-wrapper">
-                  <span class="element-points-2">+200 pontos</span>
-                </div>
-                <h3 class="customer-2">Treinamento Relâmpago</h3>
-              </div>
-              <button class="button-wrapper">
-                <span class="button-3">Junte-se à Missão</span>
-              </button>
-            </article>
-          </div>
-          <div class="frame-3">
-            <article class="frame-4">
-              <div class="frame-5">
-                <div class="element-points-wrapper">
-                  <span class="element-points-2">+700 pontos</span>
-                </div>
-                <h3 class="customer-2">Desafio do Ticket Médio</h3>
-              </div>
-              <button class="button-wrapper">
-                <span class="button-3">Junte-se à Missão</span>
-              </button>
-            </article>
-            <article class="frame-4">
-              <div class="frame-5">
-                <div class="element-points-wrapper">
-                  <span class="element-points-2">+400 pontos</span>
-                </div>
-                <h3 class="customer-2">Domine o Produto</h3>
-              </div>
-              <button class="button-wrapper">
-                <span class="button-3">Junte-se à Missão</span>
-              </button>
-            </article>
-          </div>
-        </div>
-      </section>
-      <nav class="navbar" role="navigation" aria-label="Navegação principal">
-        <a href="#" class="frame-6" role="button">
-          <img class="img" src="img/icon24=home.svg" alt="" />
-          <span class="text-wrapper-3">Início</span>
+      </main>
+
+      <nav class="navbar">
+        <a href="#" class="nav-button" aria-label="Início">
+          <img src="img/icon24=home.svg" alt="" />
+          <span>Início</span>
         </a>
-        <a href="#" class="frame-6" role="button" aria-current="page">
-          <img class="img" src="img/icon24=reward.svg" alt="" />
-          <span class="reward">Recompensas</span>
+        <a href="#" class="nav-button active" aria-current="page" aria-label="Recompensas (página atual)">
+          <img src="img/icon24=reward.svg" alt="" />
+          <span>Recompensas</span>
         </a>
-        <a href="#" class="frame-6" role="button">
-          <img class="img" src="img/icon24=challenge.svg" alt="" />
-          <span class="text-wrapper-3">Missões</span>
+        <a href="#" class="nav-button" aria-label="Missões">
+          <img src="img/icon24=challenge.svg" alt="" />
+          <span>Missões</span>
         </a>
-        <a href="#" class="frame-6" role="button">
-          <img class="img" src="img/icon24=profile.svg" alt="" />
-          <span class="text-wrapper-3">Perfil</span>
+        <a href="#" class="nav-button" aria-label="Perfil">
+          <img src="img/icon24=profile.svg" alt="" />
+          <span>Perfil</span>
         </a>
       </nav>
-    </main>
+    </div>
   </body>
 </html>

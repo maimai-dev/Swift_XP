@@ -1,733 +1,234 @@
-.ganhar-pontos {
+/* ======== ESTILOS GERAIS E MOBILE-FIRST ======== */
+
+body {
+  margin: 0;
   background-color: #fffcf8;
-  overflow: hidden;
-  width: 100%;
-  min-width: 390px;
-  min-height: 844px;
-  position: relative;
+  font-family: "Inter", Helvetica, sans-serif;
 }
 
-.ganhar-pontos .header-group {
+.page-container {
   display: flex;
-  width: 390px;
-  height: 224px;
-  gap: 4px;
-  overflow: hidden;
   flex-direction: column;
-  align-items: flex-start;
-  position: absolute;
-  top: 0;
-  left: 0;
+  min-height: 100vh;
 }
 
-.ganhar-pontos .background {
-  position: relative;
-  width: 390px;
-  height: 213px;
+/* --- Cabeçalho --- */
+.points-header {
+  background: linear-gradient(250deg, rgba(79, 40, 0, 1) 0%, rgba(151, 76, 0, 1) 50%, rgba(255, 128, 0, 1) 100%);
+  color: white;
+  padding: 16px 20px 24px;
+  border-radius: 0 0 24px 24px;
 }
 
-.ganhar-pontos .header-navigation {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.ganhar-pontos .status-bar {
-  position: relative;
-  width: 393px;
-  height: 53px;
-}
-
-.ganhar-pontos .battery {
-  position: absolute;
-  top: 23px;
-  right: 33px;
-  width: 27px;
-  height: 13px;
-}
-
-.ganhar-pontos .border {
-  position: absolute;
-  top: 0;
-  right: 2px;
-  width: 25px;
-  height: 13px;
-  border-radius: 4.3px;
-  border: 1px solid;
-  border-color: var(--color-neutral-00);
-  opacity: 0.35;
-}
-
-.ganhar-pontos .cap {
-  position: absolute;
-  top: 5px;
-  right: 1px;
-  width: 1px;
-  height: 4px;
-}
-
-.ganhar-pontos .capacity {
-  position: absolute;
-  top: 2px;
-  right: 4px;
-  width: 21px;
-  height: 9px;
-  background-color: var(--color-neutral-00);
-  border-radius: 2.5px;
-}
-
-.ganhar-pontos .wifi {
-  position: absolute;
-  width: 4.36%;
-  height: 22.83%;
-  top: 43.77%;
-  left: 78.55%;
-}
-
-.ganhar-pontos .cellular-connection {
-  position: absolute;
-  width: 4.89%;
-  height: 22.64%;
-  top: 43.58%;
-  left: 71.76%;
-}
-
-.ganhar-pontos .time-style {
-  position: absolute;
-  top: 18px;
-  left: 43px;
-  width: 54px;
-  height: 22px;
+.header-top {
   display: flex;
   align-items: center;
+  margin-bottom: 24px;
 }
 
-.ganhar-pontos .time {
-  height: 22px;
-  width: 54px;
-  font-family: "SF Pro-Semibold", Helvetica;
-  font-weight: 400;
-  color: var(--color-neutral-00);
-  font-size: 17px;
+.back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.page-title {
+  flex-grow: 1;
   text-align: center;
-  letter-spacing: 0;
-  line-height: 22px;
-}
-
-.ganhar-pontos .header {
-  display: flex;
-  width: 393px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: transparent;
-}
-
-.ganhar-pontos .img {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-
-.ganhar-pontos .title {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
   font-family: var(--body-body-bold-font-family);
   font-weight: var(--body-body-bold-font-weight);
-  color: var(--color-neutral-00);
   font-size: var(--body-body-bold-font-size);
+  margin: 0;
+  padding-right: 32px; /* Espaço para o botão voltar */
+}
+
+.points-summary {
   text-align: center;
-  letter-spacing: var(--body-body-bold-letter-spacing);
-  line-height: var(--body-body-bold-line-height);
-  white-space: nowrap;
-  font-style: var(--body-body-bold-font-style);
 }
 
-.ganhar-pontos .more-vertical {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  opacity: 0;
-}
-
-.ganhar-pontos .frame {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  position: relative;
-  top: calc(50.00% - 10px);
-  left: calc(50.00% - 2px);
-}
-
-.ganhar-pontos .ellipse {
-  position: relative;
-  width: 4px;
-  height: 4px;
-  background-color: var(--color-neutral-00);
-  border-radius: 2px;
-}
-
-.ganhar-pontos .current-point {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  padding: 8px 20px;
-  position: absolute;
-  top: 105px;
-  left: 0;
-}
-
-.ganhar-pontos .div {
+.points-info {
   display: flex;
-  width: 353px;
-  align-items: flex-end;
-  justify-content: space-between;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.ganhar-pontos .frame-2 {
-  display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  position: relative;
-  flex: 0 0 auto;
+  margin-bottom: 8px;
 }
 
-.ganhar-pontos .points {
-  position: relative;
+.points-icon {
   width: 32px;
   height: 32px;
-  margin-bottom: -1.50px;
-  margin-left: -4.00px;
 }
 
-.ganhar-pontos .element-points {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: "Inter-ExtraBold", Helvetica;
-  font-weight: 400;
-  color: var(--color-gold-10);
+.points-balance {
+  margin: 0;
+}
+
+.points-amount {
   font-size: 22px;
-  line-height: 22px;
-}
-
-.ganhar-pontos .text-wrapper {
   font-weight: 800;
-  letter-spacing: -0.10px;
-  line-height: 31.2px;
 }
 
-.ganhar-pontos .span {
-  font-family: var(--title-title-3-semibold-font-family);
-  font-weight: var(--title-title-3-semibold-font-weight);
-  font-size: var(--title-title-3-semibold-font-size);
-  letter-spacing: var(--title-title-3-semibold-letter-spacing);
-  line-height: var(--title-title-3-semibold-line-height);
-  font-style: var(--title-title-3-semibold-font-style);
-}
-
-.ganhar-pontos .text-wrapper-2 {
-  font-family: var(--caption-caption-1-reguler-font-family);
+.points-label {
   font-size: var(--caption-caption-1-reguler-font-size);
-  letter-spacing: var(--caption-caption-1-reguler-letter-spacing);
-  line-height: var(--caption-caption-1-reguler-line-height);
-  font-style: var(--caption-caption-1-reguler-font-style);
-  font-weight: var(--caption-caption-1-reguler-font-weight);
 }
 
-.ganhar-pontos .question {
-  position: absolute;
-  top: 12px;
-  left: 145px;
-  width: 14px;
-  height: 14px;
-}
-
-.ganhar-pontos .button {
-  all: unset;
-  box-sizing: border-box;
-  display: inline-flex;
-  gap: 12px;
-  padding: 4px 0px;
-  flex: 0 0 auto;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.ganhar-pontos .button-2 {
-  display: flex;
-  flex: 1;
-  margin-top: -1.00px;
-  font-family: "Poppins-SemiBold", Helvetica;
-  font-weight: 600;
-  color: var(--color-secondary-10);
-  font-size: 13px;
-  text-align: center;
-  letter-spacing: -0.08px;
-  line-height: 17.6px;
-  text-decoration: underline;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.ganhar-pontos .element-points-expiring {
-  position: relative;
-  width: fit-content;
+.points-expiring {
   font-family: var(--caption-caption-2-medium-font-family);
-  font-weight: var(--caption-caption-2-medium-font-weight);
   color: var(--color-secondary-20);
   font-size: var(--caption-caption-2-medium-font-size);
-  letter-spacing: var(--caption-caption-2-medium-letter-spacing);
-  line-height: var(--caption-caption-2-medium-line-height);
-  white-space: nowrap;
-  font-style: var(--caption-caption-2-medium-font-style);
+  margin: 0;
 }
 
-.ganhar-pontos .status-bar-2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 393px;
-  height: 53px;
-}
-
-.ganhar-pontos .earn-points {
-  display: flex;
-  flex-direction: column;
-  width: 390px;
-  align-items: center;
-  gap: 20px;
-  position: absolute;
-  top: 185px;
-  left: 0;
-}
-
-.ganhar-pontos .tabs {
-  display: flex;
-  width: 393px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  flex: 0 0 auto;
-  margin-left: -1.50px;
-  margin-right: -1.50px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-color: var(--color-neutral-30);
-}
-
-.ganhar-pontos .tab-item {
-  width: 196.5px;
-  gap: 12px;
-  padding: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.ganhar-pontos .tab {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: var(--caption-caption-1-medium-font-family);
-  font-weight: var(--caption-caption-1-medium-font-weight);
-  color: var(--color-neutral-60);
-  font-size: var(--caption-caption-1-medium-font-size);
-  text-align: center;
-  letter-spacing: var(--caption-caption-1-medium-letter-spacing);
-  line-height: var(--caption-caption-1-medium-line-height);
-  white-space: nowrap;
-  font-style: var(--caption-caption-1-medium-font-style);
-}
-
-.ganhar-pontos .tab-wrapper {
-  display: flex;
-  width: 196.5px;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 12px;
-  position: relative;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-color: #ff8000;
-}
-
-.ganhar-pontos .tab-2 {
-  width: fit-content;
-  margin-top: -2.00px;
-  font-family: var(--caption-caption-1-medium-font-family);
-  font-weight: var(--caption-caption-1-medium-font-weight);
-  color: #ff8000;
-  font-size: var(--caption-caption-1-medium-font-size);
-  text-align: center;
-  letter-spacing: var(--caption-caption-1-medium-letter-spacing);
-  line-height: var(--caption-caption-1-medium-line-height);
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  font-style: var(--caption-caption-1-medium-font-style);
-}
-
-.ganhar-pontos .list-missions {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  align-items: flex-start;
-  gap: 12px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.ganhar-pontos .frame-3 {
-  display: flex;
-  height: 166px;
-  align-items: flex-start;
-  gap: 12px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-}
-
-.ganhar-pontos .frame-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 12px 12px 16px;
-  position: relative;
-  flex: 1;
-  align-self: stretch;
+/* --- Corpo e Abas --- */
+.content-body {
+  padding: 24px 20px;
   flex-grow: 1;
-  background-color: var(--color-neutral-00);
-  border-radius: var(--number-12);
-  border: 0.5px solid;
-  border-color: #ff8000;
-  box-shadow: var(--card-shadow);
 }
 
-.ganhar-pontos .frame-5 {
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--color-neutral-30);
+  margin-bottom: 24px;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--caption-caption-1-medium-font-family);
+  font-weight: var(--caption-caption-1-medium-font-weight);
+  font-size: var(--caption-caption-1-medium-font-size);
+  color: var(--color-neutral-60);
+  border-bottom: 2px solid transparent;
+}
+
+.tab-button.active {
+  color: #ff8000;
+  border-bottom-color: #ff8000;
+}
+
+/* --- Grelha de Missões --- */
+.missions-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.mission-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #ff8000;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: var(--card-shadow);
+  min-height: 150px;
 }
 
-.ganhar-pontos .element-points-wrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  padding: 4px 8px;
-  position: relative;
-  flex: 0 0 auto;
+.mission-card-info {
+  margin-bottom: 16px;
+}
+
+.mission-points {
+  display: inline-block;
   background-color: var(--color-secondary-20);
-  border-radius: var(--number-24);
-}
-
-.ganhar-pontos .element-points-2 {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: var(--caption-caption-3-bold-font-family);
-  font-weight: var(--caption-caption-3-bold-font-weight);
   color: var(--color-secondary-50);
+  font-family: var(--caption-caption-3-bold-font-family);
   font-size: var(--caption-caption-3-bold-font-size);
-  letter-spacing: var(--caption-caption-3-bold-letter-spacing);
-  line-height: var(--caption-caption-3-bold-line-height);
-  white-space: nowrap;
-  font-style: var(--caption-caption-3-bold-font-style);
+  font-weight: var(--caption-caption-3-bold-font-weight);
+  padding: 4px 8px;
+  border-radius: 24px;
+  margin-bottom: 8px;
 }
 
-.ganhar-pontos .customer {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
+.mission-title {
   font-family: var(--caption-caption-1-medium-font-family);
   font-weight: var(--caption-caption-1-medium-font-weight);
   color: var(--color-neutral-80);
   font-size: var(--caption-caption-1-medium-font-size);
-  letter-spacing: var(--caption-caption-1-medium-letter-spacing);
-  line-height: var(--caption-caption-1-medium-line-height);
-  font-style: var(--caption-caption-1-medium-font-style);
+  margin: 0;
 }
 
-.ganhar-pontos .button-wrapper {
-  all: unset;
-  box-sizing: border-box;
-  display: flex;
-  min-width: 100px;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 7px var(--number-16) 7px var(--number-16);
-  position: relative;
-  align-self: stretch;
+.mission-button {
   width: 100%;
-  flex: 0 0 auto;
-  border-radius: var(--number-60);
-  border: 1px solid;
-  border-color: #ff8000;
-}
-
-.ganhar-pontos .button-3 {
-  display: flex;
-  width: fit-content;
-  margin-top: -1.00px;
-  margin-left: -3.50px;
-  margin-right: -3.50px;
+  padding: 7px 16px;
+  background: none;
+  border: 1px solid #ff8000;
+  border-radius: 60px;
+  color: #ff8000;
   font-family: var(--footnote-footnote-medium-font-family);
-  font-weight: var(--footnote-footnote-medium-font-weight);
-  color: #ff8000;
   font-size: var(--footnote-footnote-medium-font-size);
-  text-align: center;
-  letter-spacing: var(--footnote-footnote-medium-letter-spacing);
-  line-height: var(--footnote-footnote-medium-line-height);
-  white-space: nowrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  font-style: var(--footnote-footnote-medium-font-style);
+  font-weight: var(--footnote-footnote-medium-font-weight);
+  cursor: pointer;
 }
 
-.ganhar-pontos .customer-2 {
-  position: relative;
+/* --- Barra de Navegação Inferior --- */
+.navbar {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  font-family: var(--caption-caption-1-medium-font-family);
-  font-weight: var(--caption-caption-1-medium-font-weight);
-  color: var(--color-neutral-80-duplicate);
-  font-size: var(--caption-caption-1-medium-font-size);
-  letter-spacing: var(--caption-caption-1-medium-letter-spacing);
-  line-height: var(--caption-caption-1-medium-line-height);
-  font-style: var(--caption-caption-1-medium-font-style);
-}
-
-.ganhar-pontos .navbar {
-  display: flex;
-  width: 390px;
-  height: 60px;
-  align-items: flex-end;
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0px -1px 4px rgba(0,0,0,0.08);
   padding: 4px 8px;
-  position: absolute;
-  top: 784px;
-  left: 0;
-  background-color: var(--color-secondary-10);
-  box-shadow: 0px -0.5px 1.5px #0000001f, 0px 0px 1px #0000000a;
 }
 
-.ganhar-pontos .frame-6 {
+.nav-button {
   display: flex;
   flex-direction: column;
-  width: 60px;
   align-items: center;
-  justify-content: flex-end;
   gap: 2px;
-  padding: 8px 0px 4px;
-  position: relative;
-  margin-top: -3.00px;
-}
-
-.ganhar-pontos .text-wrapper-3 {
-  position: relative;
-  width: fit-content;
-  font-family: var(--caption-caption-2-medium-font-family);
-  font-weight: var(--caption-caption-2-medium-font-weight);
-  color: var(--color-neutral-50);
-  font-size: var(--caption-caption-2-medium-font-size);
-  text-align: center;
-  letter-spacing: var(--caption-caption-2-medium-letter-spacing);
-  line-height: var(--caption-caption-2-medium-line-height);
-  white-space: nowrap;
-  font-style: var(--caption-caption-2-medium-font-style);
-}
-
-.ganhar-pontos .reward {
-  position: relative;
-  width: fit-content;
-  margin-left: -10.50px;
-  margin-right: -10.50px;
-  font-family: var(--caption-caption-2-medium-font-family);
-  font-weight: var(--caption-caption-2-medium-font-weight);
-  color: #ff8000;
-  font-size: var(--caption-caption-2-medium-font-size);
-  text-align: center;
-  letter-spacing: var(--caption-caption-2-medium-letter-spacing);
-  line-height: var(--caption-caption-2-medium-line-height);
-  white-space: nowrap;
-  font-style: var(--caption-caption-2-medium-font-style);
-}
-/* Original CSS code should be injected here */
-
-/* Additional styles for semantic improvements */
-.ganhar-pontos .back-button {
-  all: unset;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4px;
-  border-radius: 4px;
-}
-
-.ganhar-pontos .back-button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.ganhar-pontos .back-button:focus-visible {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
-}
-
-.ganhar-pontos .question {
-  all: unset;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2px;
-  border-radius: 50%;
-  position: absolute;
-  top: 12px;
-  left: 145px;
-  width: 14px;
-  height: 14px;
-}
-
-.ganhar-pontos .question:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.ganhar-pontos .question:focus-visible {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
-}
-
-.ganhar-pontos .question img {
-  width: 14px;
-  height: 14px;
-}
-
-.ganhar-pontos .tab-item {
-  all: unset;
-  box-sizing: border-box;
-  cursor: pointer;
-  width: 196.5px;
-  gap: 12px;
-  padding: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.ganhar-pontos .tab-item:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.ganhar-pontos .tab-item:focus-visible {
-  outline: 2px solid #4a90e2;
-  outline-offset: -2px;
-}
-
-.ganhar-pontos .tab-wrapper {
-  all: unset;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: flex;
-  width: 196.5px;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 12px;
-  position: relative;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-color: #ff8000;
-}
-
-.ganhar-pontos .tab-wrapper:hover {
-  background-color: rgba(255, 128, 0, 0.05);
-}
-
-.ganhar-pontos .tab-wrapper:focus-visible {
-  outline: 2px solid #4a90e2;
-  outline-offset: -2px;
-}
-
-.ganhar-pontos .frame-6 {
-  all: unset;
-  box-sizing: border-box;
-  cursor: pointer;
+  padding: 8px;
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  width: 60px;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 2px;
-  padding: 8px 0px 4px;
-  position: relative;
-  margin-top: -3.00px;
-  border-radius: 8px;
+  font-size: 12px;
+  color: var(--color-neutral-50);
 }
 
-.ganhar-pontos .frame-6:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+.nav-button img {
+  width: 24px;
+  height: 24px;
 }
 
-.ganhar-pontos .frame-6:focus-visible {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
+.nav-button.active {
+  color: #ff8000;
 }
 
-.ganhar-pontos .button-wrapper:hover {
-  background-color: rgba(255, 128, 0, 0.05);
-  border-color: #e67300;
+/* ======== MEDIA QUERY PARA TELAS MAIORES ======== */
+@media (min-width: 768px) {
+  .page-container {
+    max-width: none; /* Remove a largura máxima para preencher a tela */
+  }
+
+  .points-header, .content-body, .navbar {
+    width: 100%;
+    max-width: 1100px; /* Largura máxima para o conteúdo */
+    margin: 0 auto;   /* Centraliza o conteúdo */
+  }
+
+  .points-header {
+    border-radius: 0;
+  }
+  
+  .navbar {
+      max-width: 100%; /* Navbar ocupa a largura total */
+  }
+  
+  .nav-button {
+      flex-direction: row; /* Ícone e texto lado a lado */
+      font-size: 14px;
+      gap: 8px;
+  }
+
+  .missions-grid {
+    /* Grelha com 2 colunas em tablets */
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.ganhar-pontos .button-wrapper:focus-visible {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
-}
-
-.ganhar-pontos .button:hover .button-2 {
-  color: #e67300;
-}
-
-.ganhar-pontos .button:focus-visible {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
+@media (min-width: 1024px) {
+  .missions-grid {
+    /* Grelha com 3 colunas em desktops */
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
