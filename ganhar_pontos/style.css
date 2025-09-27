@@ -1,5 +1,3 @@
-/* ======== ESTILOS GERAIS E MOBILE-FIRST ======== */
-
 body {
   margin: 0;
   background-color: #fffcf8;
@@ -12,7 +10,6 @@ body {
   min-height: 100vh;
 }
 
-/* --- Cabeçalho --- */
 .points-header {
   background: linear-gradient(250deg, rgba(79, 40, 0, 1) 0%, rgba(151, 76, 0, 1) 50%, rgba(255, 128, 0, 1) 100%);
   color: white;
@@ -40,7 +37,7 @@ body {
   font-weight: var(--body-body-bold-font-weight);
   font-size: var(--body-body-bold-font-size);
   margin: 0;
-  padding-right: 32px; /* Espaço para o botão voltar */
+  padding-right: 32px; 
 }
 
 .points-summary {
@@ -80,7 +77,6 @@ body {
   margin: 0;
 }
 
-/* --- Corpo e Abas --- */
 .content-body {
   padding: 24px 20px;
   flex-grow: 1;
@@ -110,7 +106,6 @@ body {
   border-bottom-color: #ff8000;
 }
 
-/* --- Grelha de Missões --- */
 .missions-grid {
   display: grid;
   gap: 16px;
@@ -165,7 +160,6 @@ body {
   cursor: pointer;
 }
 
-/* --- Barra de Navegação Inferior --- */
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -194,16 +188,15 @@ body {
   color: #ff8000;
 }
 
-/* ======== MEDIA QUERY PARA TELAS MAIORES ======== */
 @media (min-width: 768px) {
   .page-container {
-    max-width: none; /* Remove a largura máxima para preencher a tela */
+    max-width: none; 
   }
 
   .points-header, .content-body, .navbar {
     width: 100%;
-    max-width: 1100px; /* Largura máxima para o conteúdo */
-    margin: 0 auto;   /* Centraliza o conteúdo */
+    max-width: 1100px; 
+    margin: 0 auto;   
   }
 
   .points-header {
@@ -211,24 +204,22 @@ body {
   }
   
   .navbar {
-      max-width: 100%; /* Navbar ocupa a largura total */
+      max-width: 100%; 
   }
   
   .nav-button {
-      flex-direction: row; /* Ícone e texto lado a lado */
+      flex-direction: row; 
       font-size: 14px;
       gap: 8px;
   }
 
   .missions-grid {
-    /* Grelha com 2 colunas em tablets */
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
   .missions-grid {
-    /* Grelha com 3 colunas em desktops */
     grid-template-columns: repeat(3, 1fr);
   }
 }

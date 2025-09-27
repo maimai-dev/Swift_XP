@@ -1,8 +1,6 @@
-/* ======== ESTILOS GERAIS E MOBILE-FIRST ======== */
-
 body {
   margin: 0;
-  background-color: #fffcf8; /* Cor de fundo padrão */
+  background-color: #fffcf8; 
   font-family: "Inter", Helvetica, sans-serif;
 }
 
@@ -16,7 +14,6 @@ body {
   background-color: var(--color-secondary-10);
 }
 
-/* --- Cabeçalho --- */
 .mission-header {
   display: flex;
   align-items: center;
@@ -42,14 +39,12 @@ body {
   color: var(--color-neutral-90);
   font-size: var(--body-body-bold-font-size);
   margin: 0;
-  /* Espaço para o botão voltar não empurrar o título */
   padding-right: 32px; 
 }
 
-/* --- Conteúdo Principal --- */
 .mission-content {
   padding: 20px;
-  flex-grow: 1; /* Empurra o rodapé para o final */
+  flex-grow: 1; 
 }
 
 .mission-title {
@@ -69,7 +64,6 @@ body {
   margin: 0 0 12px 0;
 }
 
-/* --- Rodapé com o botão --- */
 .mission-footer {
   padding: 20px;
   background-color: white;
@@ -90,33 +84,29 @@ body {
   font-size: var(--body-body-bold-font-size);
 }
 
-/* ======== MEDIA QUERY ATUALIZADA PARA LAYOUT DE LARGURA TOTAL ======== */
 @media (min-width: 768px) {
   body {
-    /* Mantém o fundo da página consistente */
     background-color: var(--color-secondary-10);
   }
 
   .mission-container {
-    /* Remove as restrições que criavam o efeito de "cartão" */
-    max-width: none;      /* Remove a largura máxima */
+    max-width: none;      
     min-height: 100vh;
-    margin: 0;            /* Remove as margens */
-    border-radius: 0;     /* Remove as bordas arredondadas */
-    box-shadow: none;       /* Remove a sombra */
+    margin: 0;            
+    border-radius: 0;     
+    box-shadow: none;       
   }
 
-  /* Centraliza o conteúdo principal para melhor legibilidade em ecrãs largos */
   .mission-header,
   .mission-content,
   .mission-footer {
     width: 100%;
-    max-width: 960px; /* Largura máxima para o conteúdo */
-    margin: 0 auto;   /* Centraliza o conteúdo */
+    max-width: 960px; 
+    margin: 0 auto;   
   }
   
   .mission-footer {
-      border-radius: 0; /* Garante que o rodapé não tenha bordas arredondadas */
+      border-radius: 0; 
       box-shadow: none;
       border-top: 1px solid var(--color-neutral-30);
   }
