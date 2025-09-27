@@ -47,9 +47,9 @@
   --footnote-footnote-medium-letter-spacing: -0.07800000160932541px;
   --footnote-footnote-medium-line-height: 135.0000023841858%;
   --footnote-footnote-medium-font-style: normal;
-  --bottom-4: 0px 0.5px 1.5px 0px rgba(0, 0, 0, 0.12), 0px 0px 1px 0px
-    rgba(0, 0, 0, 0.04);
   --card-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.12), 0px 0px 1px 0px
+    rgba(0, 0, 0, 0.04);
+  --bottom-4: 0px 0.5px 1.5px 0px rgba(0, 0, 0, 0.12), 0px 0px 1px 0px
     rgba(0, 0, 0, 0.04);
   --number-12: 12px;
   --number-16: 16px;
@@ -57,9 +57,9 @@
   --number-24: 24px;
   --number-60: 60px;
   --number-08: 8px;
+  --number-12-duplicate: 12px;
   --number-08-duplicate: 8px;
   --number-00: 0px;
-  --number-12-duplicate: 12px;
   --color-neutral-50: rgba(160, 164, 176, 1);
   --color-neutral-00: rgba(255, 255, 255, 1);
   --color-neutral-00-duplicate: rgba(255, 255, 255, 1);
