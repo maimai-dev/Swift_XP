@@ -9,50 +9,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="detalhe-misso">
-      <div class="mission-detail-wrapper">
-        <article class="mission-detail">
-          <header class="header">
-            <div class="header-2">
-              <button class="arrow-left" type="button" aria-label="Voltar">
-                <img src="img/icon24=arrow-left.svg" alt="" role="presentation" />
-              </button>
-              <h1 class="title">Detalhes da Missão</h1>
-              <div class="more-vertical" aria-hidden="true">
-                <div class="frame-2">
-                  <div class="ellipse"></div>
-                  <div class="ellipse"></div>
-                  <div class="ellipse"></div>
-                </div>
-              </div>
-            </div>
-          </header>
-          <section class="mission-details">
-            <h2 class="text-wrapper">🏆 Missão Especial: Desafio do Dia D</h2>
-            <div class="frame">
-              <p class="div">Hoje é o Dia D — o momento de mostrar sua garra, sua atitude e sua paixão pelo que faz!</p>
-              <p class="p">
-                Nesta missão especial, você terá um desafio relâmpago, válido por apenas 24 horas, com foco em superar
-                metas, atender com excelência ou mostrar seu conhecimento Swift.
-              </p>
-              <p class="p">
-                🕒 Validade: Somente hoje!<br />
-                🎯 Objetivo: Concluir o desafio proposto antes do final do expediente.<br />
-                🎁 Recompensa: Pontos bônus, reconhecimento e avanço no seu ranking de loja!
-              </p>
-              <p class="p">
-                Este é o tipo de missão que pode virar o jogo — e ainda garantir aquela vantagem extra rumo ao ranking
-                Ouro ou Platina.
-              </p>
-            </div>
-          </section>
-          <div class="cta">
-            <button class="button" type="button">
-              <span class="button-2">Iniciar Missão</span>
-            </button>
-          </div>
-        </article>
-      </div>
-    </main>
+    <div class="mission-container">
+      <header class="mission-header">
+        <button class="back-button" type="button" aria-label="Voltar">
+          <img src="img/icon24=arrow-left.svg" alt="" role="presentation" />
+        </button>
+        <h1 class="page-title">Detalhes da Missão</h1>
+      </header>
+
+      <main class="mission-content">
+        <h2 class="mission-title">🏆 Missão Especial: Desafio do Dia D</h2>
+        <div class="mission-description">
+          <p>Hoje é o Dia D — o momento de mostrar sua garra, sua atitude e sua paixão pelo que faz!</p>
+          <p>
+            Nesta missão especial, você terá um desafio relâmpago, válido por apenas 24 horas, com foco em superar
+            metas, atender com excelência ou mostrar seu conhecimento Swift.
+          </p>
+          <p>
+            🕒 Validade: Somente hoje!<br />
+            🎯 Objetivo: Concluir o desafio proposto antes do final do expediente.<br />
+            🎁 Recompensa: Pontos bônus, reconhecimento e avanço no seu ranking de loja!
+          </p>
+          <p>
+            Este é o tipo de missão que pode virar o jogo — e ainda garantir aquela vantagem extra rumo ao ranking
+            Ouro ou Platina.
+          </p>
+        </div>
+      </main>
+
+      <footer class="mission-footer">
+        <button class="cta-button" type="button">
+          <span>Iniciar Missão</span>
+        </button>
+      </footer>
+    </div>
   </body>
 </html>
