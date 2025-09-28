@@ -2110,3 +2110,58 @@ body {
     gap: 8px;
   }
 }
+
+/* ======== ESTILOS DA PÁGINA DE HISTÓRICO DE PONTOS ======== */
+.history-list {
+  padding-top: 16px;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: white;
+  border-bottom: 1px solid var(--color-neutral-20);
+}
+
+.history-item:first-child {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.history-item:last-child {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom: none;
+}
+
+.history-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-title {
+  font-weight: 500;
+  color: var(--color-neutral-80);
+  margin-bottom: 4px;
+}
+
+.history-date {
+  font-size: 14px;
+  color: var(--color-neutral-60);
+}
+
+.history-points {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.history-item.earned .history-points {
+  color: #28a745; 
+}
+
+.history-item.redeemed .history-points,
+.history-item.expired .history-points {
+  color: #dc3545; 
+}
