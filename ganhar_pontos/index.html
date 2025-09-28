@@ -11,25 +11,36 @@
       <header class="points-header">
         <div class="header-top">
           <button class="back-button" aria-label="Voltar">
-            <img class="img" src="../assets/images/icons/icon24=arrow-left.svg" alt="" />
+            <img
+              class="img"
+              src="../assets/images/icons/icon24=arrow-left.svg"
+              alt=""
+            />
           </button>
           <h1 class="page-title">Meus Pontos e Recompensas</h1>
         </div>
         <div class="points-summary">
           <div class="points-info">
-            <img class="points-icon" src="../assets/images/icons/points.svg" alt="Ícone de pontos" />
+            <img
+              class="points-icon"
+              src="../assets/images/icons/points.svg"
+              alt="Ícone de pontos"
+            />
             <p class="points-balance">
               <span class="points-amount">1.500</span>
               <span class="points-label">Pontos</span>
             </p>
           </div>
+
+          <a href="#" class="points-history-link">Histórico de Pontos</a>
+
           <p class="points-expiring">200 pontos expirando em 31/12/2025</p>
         </div>
       </header>
 
       <main class="content-body">
         <nav class="tabs" role="tablist">
-          <button class="tab-button" role="tab" aria-selected="false">
+          <button id="botao-resgatar-pontos" class="tab-button" role="tab" aria-selected="false">
             <span>Resgatar Pontos</span>
           </button>
           <button class="tab-button active" role="tab" aria-selected="true">
@@ -88,7 +99,12 @@
           <img src="../assets/images/icons/icon24=home_config.svg" alt="" />
           <span>Início</span>
         </a>
-        <a href="#" class="nav-button active" aria-current="page" aria-label="Recompensas (página atual)">
+        <a
+          href="#"
+          class="nav-button active"
+          aria-current="page"
+          aria-label="Recompensas (página atual)"
+        >
           <img src="../assets/images/icons/icon24=reward_pontos.svg" alt="" />
           <span>Recompensas</span>
         </a>
@@ -102,5 +118,6 @@
         </a>
       </nav>
     </div>
+    <script src="../assets/js/script_ganhar_pontos.js"></script>
   </body>
 </html>
