@@ -398,6 +398,11 @@ body {
   background-color: white; border-radius: 12px; padding: 12px;
   display: flex; flex-direction: column; justify-content: space-between;
 }
+
+.challenge-card .mission-points {
+  align-self: flex-start;
+}
+
 .challenge-title { font-size: 14px; font-weight: 500; color: var(--color-neutral-80); margin: 8px 0 16px; }
 .join-mission-button {
   width: 100%; padding: 7px 16px; background: none; border: 1px solid #ff8000;
@@ -1234,6 +1239,13 @@ body {
   padding: 16px;
   box-shadow: var(--card-shadow);
   min-height: 150px;
+}
+
+.mission-card-large .mission-info {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  margin-bottom: 16px;
 }
 
 .join-button {
