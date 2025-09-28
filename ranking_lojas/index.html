@@ -3,50 +3,63 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <title>Ranking Lojas</title>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Ranking de Lojas - Swift XP</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <main class="ranking-lojas">
-      <div class="overlap-group-wrapper">
-        <div class="overlap-group">
-          <img
-            class="membership"
-            src="img/membership.png"
-            alt="Ranking de lojas com destaque para as melhores performances"
-          />
-          <form class="frame" role="search">
-            <div class="div">
-              <img class="search" src="img/icon24-search.svg" alt="Ícone de pesquisa" />
-              <label for="search-input" class="visually-hidden">Pesquisar lojas</label>
-              <input
-                type="search"
-                id="search-input"
-                class="text-wrapper"
-                placeholder="Pesquisa"
-                aria-label="Pesquisar lojas no ranking"
-              />
-            </div>
+    <div class="page-container">
+      <header class="page-header">
+        <a href="../inicial/index.html" class="back-button" aria-label="Voltar">
+          </a>
+        <h1 class="page-title">Ranking de Lojas</h1>
+      </header>
+      
+      <main class="main-content">
+        <section class="search-section">
+          <form class="search-bar">
+            <input type="search" placeholder="Pesquisar lojas..." class="search-input" />
+            <button type="submit" class="search-button" aria-label="Pesquisar"></button>
           </form>
-          <h2 class="destaques-da-semana">
-            <span class="span">Destaques da Semana </span>
-            <span class="span" role="img" aria-label="emoji de destaque">🔝</span>
-          </h2>
-          <h3 class="text-wrapper-2">
-            Reconhecimento Especial
-            <span role="img" aria-label="emoji de celebração">🎉</span>
-          </h3>
-          <h2 class="p">
-            Ranking Mensal - Top 10 Lojas
-            <span role="img" aria-label="emoji de troféu">🏆</span>
-          </h2>
-          <a href="#" class="text-wrapper-3" aria-label="Ver ranking completo de todas as lojas"
-            >Ver ranking completo</a
-          >
-        </div>
-      </div>
-    </main>
+        </section>
+
+        <section class="content-section">
+          <h2 class="section-title">🏆 Ranking Mensal - Top 10 Lojas</h2>
+          <div class="ranking-list">
+            <div class="ranking-item">
+              <span class="rank-position">1º</span>
+              <span class="store-name">Loja Swift - Vila Madalena</span>
+              <span class="store-points">12.500 Pontos</span>
+            </div>
+            <div class="ranking-item">
+              <span class="rank-position">2º</span>
+              <span class="store-name">Loja Swift - Copacabana</span>
+              <span class="store-points">11.800 Pontos</span>
+            </div>
+            <div class="ranking-item">
+              <span class="rank-position">3º</span>
+              <span class="store-name">Loja Swift - Savassi</span>
+              <span class="store-points">10.950 Pontos</span>
+            </div>
+          </div>
+          <a href="#" class="see-all-link">Ver ranking completo</a>
+        </section>
+
+        <section class="content-section">
+          <h2 class="section-title">🔝 Destaques da Semana</h2>
+          </section>
+
+        <section class="content-section">
+          <h2 class="section-title">🎉 Reconhecimento Especial</h2>
+          </section>
+
+      </main>
+      
+      <nav class="navbar">
+        <a href="../inicial/index.html" class="nav-button"><img src="../assets/images/icons/icon24=home.svg" alt="" /><span>Início</span></a>
+        <a href="../pontos/index.html" class="nav-button"><img src="../assets/images/icons/icon24=reward.svg" alt="" /><span>Recompensas</span></a>
+        <a href="../missoes/index.html" class="nav-button"><img src="../assets/images/icons/icon24=challenge.svg" alt="" /><span>Missões</span></a>
+        <a href="../configuracao/index.html" class="nav-button"><img src="../assets/images/icons/icon24=profile.svg" alt="" /><span>Perfil</span></a>
+      </nav>
+    </div>
   </body>
 </html>

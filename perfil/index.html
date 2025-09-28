@@ -3,142 +3,90 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <title>Informações da conta</title>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Informações da conta - Swift XP</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <main class="informaes-da-conta">
-      <div class="div">
-        <header class="header">
-          <div class="status-bar" role="banner" aria-label="Status da bateria e conectividade">
-            <div class="battery" aria-label="Bateria">
-              <div class="overlap-group">
-                <div class="capacity" aria-hidden="true"></div>
-              </div>
-              <img class="cap" src="img/cap.svg" alt="" aria-hidden="true" />
+    <div class="page-container">
+      <header class="page-header">
+        <a href="../configuracao/index.html" class="back-button" aria-label="Voltar">
+          <img src="img/icon24-arrow-left.svg" alt="" />
+        </a>
+        <h1 class="page-title">Informações da conta</h1>
+      </header>
+
+      <main class="main-content">
+        <section class="profile-section">
+          <h2 class="section-title">PERFIL</h2>
+          <div class="profile-details">
+            <div class="avatar-area">
+              <img class="avatar" src="img/avatar.png" alt="Foto de perfil do usuário Lucas Oliveira" />
+              <button class="change-photo-button" type="button">Mudar foto de perfil</button>
             </div>
-            <img class="wifi" src="img/wifi.svg" alt="WiFi conectado" />
-            <img class="cellular-connection" src="img/cellular-connection.svg" alt="Conexão celular" />
-            <div class="time-style">
-              <time class="time" datetime="09:41">9:41</time>
+            <div class="info-group">
+              <a href="#" class="info-row">
+                <span class="info-key">Nome completo</span>
+                <div class="info-value-wrapper">
+                  <span class="info-value">Lucas Oliveira</span>
+                  <img src="img/icon24-chevron-right.svg" alt="Editar" />
+                </div>
+              </a>
+              <a href="#" class="info-row">
+                <span class="info-key">Nome de usuário</span>
+                <div class="info-value-wrapper">
+                  <span class="info-value">Lucas Oliveira</span>
+                  <img src="img/icon24-chevron-right.svg" alt="Editar" />
+                </div>
+              </a>
             </div>
           </div>
-          <div class="header-2">
-            <button class="back-button" aria-label="Voltar">
-              <img class="img" src="img/icon24-arrow-left.svg" alt="" />
-            </button>
-            <h1 class="title">Informações da conta</h1>
-            <button class="more-vertical" aria-label="Mais opções">
-              <div class="frame">
-                <div class="ellipse" aria-hidden="true"></div>
-                <div class="ellipse" aria-hidden="true"></div>
-                <div class="ellipse" aria-hidden="true"></div>
+        </section>
+
+        <section class="info-section">
+          <h2 class="section-title">INFORMAÇÕES PESSOAIS</h2>
+          <div class="info-group">
+            <div class="info-row">
+              <span class="info-key">Código de matrícula</span>
+              <div class="info-value-wrapper">
+                <span class="info-value">67776</span>
+                <button aria-label="Copiar código de matrícula">
+                  <img src="img/icon24-copy.svg" alt="Copiar" />
+                </button>
               </div>
-            </button>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Data de nascimento</span>
+              <div class="info-value-wrapper">
+                <time class="info-value" datetime="2004-06-12">12 Junho 2004</time>
+                <button aria-label="Informações sobre data de nascimento">
+                  <img src="img/icon24-info.svg" alt="Informações" />
+                </button>
+              </div>
+            </div>
+            <a href="#" class="info-row">
+              <span class="info-key">Número de telefone</span>
+              <div class="info-value-wrapper">
+                <span class="info-value">+55 11 98996 1425</span>
+                <img src="img/icon24-chevron-right.svg" alt="Editar" />
+              </div>
+            </a>
+            <a href="#" class="info-row">
+              <span class="info-key">Email</span>
+              <div class="info-value-wrapper">
+                <span class="info-value">lucas.oliveira23@swift.com.br</span>
+                <img src="img/icon24-chevron-right.svg" alt="Editar" />
+              </div>
+            </a>
+            <a href="#" class="info-row">
+              <span class="info-key">Gênero</span>
+              <div class="info-value-wrapper">
+                <span class="info-value">Masculino</span>
+                <img src="img/icon24-chevron-right.svg" alt="Editar" />
+              </div>
+            </a>
           </div>
-        </header>
-        <div class="account-content">
-          <section class="div-2">
-            <div class="frame-2">
-              <h2 class="text-wrapper">PERFIL</h2>
-              <div class="frame-3">
-                <div class="frame-4">
-                  <img class="avatar" src="img/avatar.png" alt="Foto de perfil do usuário Lucas Oliveira" />
-                  <button class="button" type="button">
-                    <span class="button-2">Mudar foto de perfil</span>
-                  </button>
-                </div>
-                <div class="frame-5">
-                  <div class="frame-wrapper">
-                    <div class="frame-6">
-                      <label class="key">Nome completo</label>
-                      <div class="frame-7">
-                        <span class="value">Lucas Oliveira</span>
-                        <img class="img" src="img/icon24-chevron-right.svg" alt="Editar" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper">
-                    <div class="frame-6">
-                      <label class="key">Nome de usuário</label>
-                      <div class="frame-7">
-                        <span class="value">Lucas Oliveira</span>
-                        <img class="img" src="img/icon24-chevron-right.svg" alt="Editar" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="divider" role="separator" aria-hidden="true">
-              <div class="rectangle"></div>
-              <div class="rectangle-2"></div>
-            </div>
-          </section>
-          <section class="div-2">
-            <div class="frame-8">
-              <h2 class="text-wrapper">Informações pessoais</h2>
-              <div class="frame-9">
-                <div class="frame-10">
-                  <div class="frame-6">
-                    <label class="key">Código de matrícula</label>
-                    <div class="frame-7">
-                      <span class="value">67776</span>
-                      <button aria-label="Copiar código de matrícula">
-                        <img class="img" src="img/icon24-copy.svg" alt="Copiar" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="frame-10">
-                  <div class="frame-6">
-                    <label class="key">Data de nascimento</label>
-                    <div class="frame-7">
-                      <time class="value" datetime="2004-06-12">12 Junho 2004</time>
-                      <button aria-label="Informações sobre data de nascimento">
-                        <img class="img" src="img/icon24-info.svg" alt="Informações" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="frame-10">
-                  <div class="frame-6">
-                    <label class="key">Número de telefone</label>
-                    <div class="frame-7">
-                      <span class="value">+55 11 98996 1425</span>
-                      <img class="img" src="img/icon24-chevron-right.svg" alt="Editar" />
-                    </div>
-                  </div>
-                </div>
-                <div class="frame-10">
-                  <div class="frame-6">
-                    <label class="key">Email</label>
-                    <div class="frame-7">
-                      <span class="value">lucas.oliveira23@swift.com.br</span>
-                      <img class="img" src="img/icon24-chevron-right.svg" alt="Editar" />
-                    </div>
-                  </div>
-                </div>
-                <div class="frame-11">
-                  <div class="frame-6">
-                    <label class="key">Gênero</label>
-                    <div class="frame-7">
-                      <span class="value">Masculino</span>
-                      <img class="img" src="img/icon24-chevron-right.svg" alt="Editar" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="divider" role="separator" aria-hidden="true">
-              <div class="rectangle"></div>
-              <div class="rectangle-2"></div>
-            </div>
-          </section>
-        </div>
-      </div>
-    </main>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

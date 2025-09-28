@@ -3,246 +3,105 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <title>Missões - Conclua missões para ganhar pontos</title>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Missões - Swift XP</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <main class="misses">
-      <div class="overlap-wrapper">
-        <div class="overlap">
-          <header class="background">
-            <div class="overlap-group">
-              <img class="subtract" src="../assets/images/icons/Subtract_missoes.svg" alt="" />
-              <div class="rectangle"></div>
-              <div class="frame">
-                <h1 class="text-wrapper">Missões</h1>
-                <p class="div">Conclua missões para ganhar pontos</p>
+    <div class="page-container">
+      <header class="missions-header">
+        <h1 class="header-title">Missões</h1>
+        <p class="header-subtitle">Conclua missões para ganhar pontos</p>
+      </header>
+
+      <main class="main-content">
+        <section class="missions-section">
+          <h2 class="section-title">Missões Ativas (6)</h2>
+          <div class="active-missions-grid">
+            <a href="../detalhe_missao/index.html" class="mission-card-small">
+              <span class="mission-points">+500 pontos</span>
+              <h3 class="mission-title">Segurança em Primeiro Lugar</h3>
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 42%;"></div>
               </div>
-            </div>
-          </header>
-          <div class="frame-2">
-            <section class="list-of-current">
-              <div class="current-missions">
-                <div class="list-of-missions">
-                  <div class="section-title">
-                    <h2 class="title">Missões Ativas (6)</h2>
-                  </div>
-                  <div class="current-mission">
-                    <div class="frame-3">
-                      <article class="frame-wrapper">
-                        <div class="frame-4">
-                          <div class="frame-5">
-                            <div class="element-points-wrapper">
-                              <span class="element-points">+500 pontos</span>
-                            </div>
-                            <h3 class="customer">Segurança em Primeiro Lugar</h3>
-                          </div>
-                          <div class="div-wrapper">
-                            <div class="frame-6">
-                              <div
-                                class="img"
-                                role="progressbar"
-                                aria-valuenow="3"
-                                aria-valuemin="0"
-                                aria-valuemax="7"
-                                aria-label="Progresso da missão"
-                              >
-                                <img src="../assets/images/icons/Frame2610018.svg" alt="Barra de progresso" />
-                              </div>
-                              <span class="text-wrapper-2">3 of 7</span>
-                            </div>
-                          </div>
-                        </div>
-                      </article>
-                      <article class="frame-wrapper">
-                        <div class="frame-4">
-                          <div class="frame-5">
-                            <div class="element-points-wrapper">
-                              <span class="element-points">+250 pontos</span>
-                            </div>
-                            <h3 class="customer">Desafio do Conhecimento Swift</h3>
-                          </div>
-                          <div class="div-wrapper">
-                            <div class="frame-6">
-                              <div
-                                class="img"
-                                role="progressbar"
-                                aria-valuenow="1"
-                                aria-valuemin="0"
-                                aria-valuemax="2"
-                                aria-label="Progresso da missão"
-                              >
-                                <img src="../assets/images/icons/Frame2610018.svg" alt="Barra de progresso" />
-                              </div>
-                              <span class="text-wrapper-2">1 of 2</span>
-                            </div>
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                    <div class="frame-3">
-                      <article class="frame-wrapper">
-                        <div class="frame-4">
-                          <div class="frame-5">
-                            <div class="element-points-wrapper">
-                              <span class="element-points">+200 pontos</span>
-                            </div>
-                            <h3 class="customer-2">Cortes Nobres Swift</h3>
-                          </div>
-                          <div class="div-wrapper">
-                            <div class="frame-6">
-                              <div
-                                class="img"
-                                role="progressbar"
-                                aria-valuenow="3"
-                                aria-valuemin="0"
-                                aria-valuemax="7"
-                                aria-label="Progresso da missão"
-                              >
-                                <img src="../assets/images/icons/Frame2610018.svg" alt="Barra de progresso" />
-                              </div>
-                              <span class="text-wrapper-2">3 of 7</span>
-                            </div>
-                          </div>
-                        </div>
-                      </article>
-                      <article class="frame-wrapper">
-                        <div class="frame-4">
-                          <div class="frame-5">
-                            <div class="element-points-wrapper">
-                              <span class="element-points">+150 pontos</span>
-                            </div>
-                            <h3 class="customer-2">Segurança Alimentar</h3>
-                          </div>
-                          <div class="div-wrapper">
-                            <div class="frame-6">
-                              <div
-                                class="img"
-                                role="progressbar"
-                                aria-valuenow="1"
-                                aria-valuemin="0"
-                                aria-valuemax="2"
-                                aria-label="Progresso da missão"
-                              >
-                                <img src="../assets/images/icons/Frame2610018.svg" alt="Barra de progresso" />
-                              </div>
-                              <span class="text-wrapper-2">1 of 2</span>
-                            </div>
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-                <div class="button">
-                  <button class="button-2" type="button">Ver todas</button>
-                </div>
+              <span class="progress-text">3 de 7</span>
+            </a>
+            <a href="../detalhe_missao/index.html" class="mission-card-small">
+              <span class="mission-points">+250 pontos</span>
+              <h3 class="mission-title">Desafio do Conhecimento Swift</h3>
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 57%;"></div>
               </div>
-            </section>
-            <section class="list-of-missions-2">
-              <div class="section-title-2">
-                <div class="title-wrapper">
-                  <h2 class="title-2">Junte-se às Missões</h2>
-                </div>
-              </div>
-              <div class="mission-items">
-                <div class="frame-7">
-                  <article class="frame-8">
-                    <div class="frame-5">
-                      <div class="element-points-wrapper">
-                        <span class="element-points">+500 pontos</span>
-                      </div>
-                      <h3 class="customer-3">Missão Especial: Desafio do Dia D</h3>
-                    </div>
-                    <div class="button-wrapper">
-                      <button class="button-3" type="button">Junte-se à Missão</button>
-                    </div>
-                  </article>
-                  <article class="frame-8">
-                    <div class="frame-5">
-                      <div class="element-points-wrapper">
-                        <span class="element-points">+350 pontos</span>
-                      </div>
-                      <h3 class="customer-3">Juntos Somos Mais Fortes</h3>
-                    </div>
-                    <div class="button-wrapper">
-                      <button class="button-3" type="button">Junte-se à Missão</button>
-                    </div>
-                  </article>
-                </div>
-                <div class="frame-7">
-                  <article class="frame-8">
-                    <div class="frame-5">
-                      <div class="element-points-wrapper">
-                        <span class="element-points">+600 pontos</span>
-                      </div>
-                      <h3 class="customer-4">Meta de Venda Individual</h3>
-                    </div>
-                    <div class="button-wrapper">
-                      <button class="button-3" type="button">Junte-se à Missão</button>
-                    </div>
-                  </article>
-                  <article class="frame-8">
-                    <div class="frame-5">
-                      <div class="element-points-wrapper">
-                        <span class="element-points">+200 pontos</span>
-                      </div>
-                      <h3 class="customer-4">Treinamento Relâmpago</h3>
-                    </div>
-                    <div class="button-wrapper">
-                      <button class="button-3" type="button">Junte-se à Missão</button>
-                    </div>
-                  </article>
-                </div>
-                <div class="frame-9">
-                  <article class="frame-8">
-                    <div class="frame-5">
-                      <div class="element-points-wrapper">
-                        <span class="element-points">+700 pontos</span>
-                      </div>
-                      <h3 class="customer-4">Desafio do Ticket Médio</h3>
-                    </div>
-                    <div class="button-wrapper">
-                      <button class="button-3" type="button">Junte-se à Missão</button>
-                    </div>
-                  </article>
-                  <article class="frame-8">
-                    <div class="frame-5">
-                      <div class="element-points-wrapper">
-                        <span class="element-points">+400 pontos</span>
-                      </div>
-                      <h3 class="customer-4">Domine o Produto</h3>
-                    </div>
-                    <div class="button-wrapper">
-                      <button class="button-3" type="button">Junte-se à Missão</button>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </section>
-            <nav class="navbar" role="navigation" aria-label="Navegação principal">
-              <a href="#" class="frame-10" aria-current="false">
-                <img class="img-2" src="../assets/images/icons/icon24=home_config.svg" alt="" />
-                <span class="home">Início</span>
-              </a>
-              <a href="#" class="frame-10" aria-current="false">
-                <img class="img-2" src="../assets/images/icons/icon24=reward.svg" alt="" />
-                <span class="reward">Recompensas</span>
-              </a>
-              <a href="#" class="frame-10" aria-current="page">
-                <img class="img-2" src="/assets/images/icons/icon24=challenge_missoes.svg" alt="" />
-                <span class="mission">Missões</span>
-              </a>
-              <a href="#" class="frame-10" aria-current="false">
-                <img class="img-2" src="/assets/images/icons/icon24=profile_pontos.svg" alt="" />
-                <span class="profile">Perfil</span>
-              </a>
-            </nav>
+              <span class="progress-text">4 de 7</span>
+            </a>
+             <a href="../detalhe_missao/index.html" class="mission-card-small">
+              <span class="mission-points">+200 pontos</span>
+              <h3 class="mission-title">Cortes Nobres Swift</h3>
+              <div class="progress-bar-container"><div class="progress-bar" style="width: 80%;"></div></div>
+              <span class="progress-text">4 de 5</span>
+            </a>
+            <a href="../detalhe_missao/index.html" class="mission-card-small">
+              <span class="mission-points">+150 pontos</span>
+              <h3 class="mission-title">Segurança Alimentar</h3>
+              <div class="progress-bar-container"><div class="progress-bar" style="width: 50%;"></div></div>
+              <span class="progress-text">1 de 2</span>
+            </a>
           </div>
-        </div>
-      </div>
-    </main>
+          <a href="#" class="see-all-button">Ver todas</a>
+        </section>
+
+        <section class="missions-section">
+          <h2 class="section-title">Junte-se às Missões</h2>
+          <div class="join-missions-grid">
+            <article class="mission-card-large">
+              <div class="mission-info">
+                <span class="mission-points">+500 pontos</span>
+                <h3 class="mission-title">Missão Especial: Desafio do Dia D</h3>
+              </div>
+              <a href="../detalhe_missao/index.html" class="join-button">Junte-se à Missão</a>
+            </article>
+            <article class="mission-card-large">
+              <div class="mission-info">
+                <span class="mission-points">+350 pontos</span>
+                <h3 class="mission-title">Juntos Somos Mais Fortes</h3>
+              </div>
+              <a href="../detalhe_missao/index.html" class="join-button">Junte-se à Missão</a>
+            </article>
+            <article class="mission-card-large">
+              <div class="mission-info">
+                <span class="mission-points">+600 pontos</span>
+                <h3 class="mission-title">Meta de Venda Individual</h3>
+              </div>
+              <a href="../detalhe_missao/index.html" class="join-button">Junte-se à Missão</a>
+            </article>
+            <article class="mission-card-large">
+              <div class="mission-info">
+                <span class="mission-points">+200 pontos</span>
+                <h3 class="mission-title">Treinamento Relâmpago</h3>
+              </div>
+              <a href="../detalhe_missao/index.html" class="join-button">Junte-se à Missão</a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <nav class="navbar">
+        <a href="../inicial/index.html" class="nav-button">
+          <img src="img/icon24-home.svg" alt="" />
+          <span>Início</span>
+        </a>
+        <a href="../pontos/index.html" class="nav-button">
+          <img src="img/icon24-reward.svg" alt="" />
+          <span>Recompensas</span>
+        </a>
+        <a href="../missoes/index.html" class="nav-button active" aria-current="page">
+          <img src="img/icon24-challenge.svg" alt="" />
+          <span>Missões</span>
+        </a>
+        <a href="../configuracao/index.html" class="nav-button">
+          <img src="img/icon24-profile.svg" alt="" />
+          <span>Perfil</span>
+        </a>
+      </nav>
+    </div>
   </body>
 </html>
