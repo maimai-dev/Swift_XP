@@ -1647,6 +1647,48 @@ body {
   }
 }
 
+
+.reward-card {
+  position: relative; 
+}
+
+.reward-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+  z-index: 2;
+}
+
+.reward-percent {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+  margin: 0 0 8px 0;
+  display: block;
+}
+
+.reward-rank-tag {
+  display: inline-block;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+.reward-rank-tag.purple { background-color: #c500b6; }
+.reward-rank-tag.blue { background-color: #364dc6; }
+.reward-rank-tag.orange { background-color: #cc7206; }
+.reward-rank-tag.silver { background-color: #a9a9a9; }
+
+.reward-card .reward-info {
+  margin-top: auto; 
+  padding-top: 40px; 
+}
+
 /* ======== ESTILOS DA PÁGINA DE RANKING INDIVIDUAL ======== */
 
 body {
