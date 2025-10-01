@@ -1052,7 +1052,7 @@ body {
   }
 }
 
-/* ======== ESTILOS DA PÁGINA GANHAR PORNTOS ======== */
+/* ======== ESTILOS DA PÁGINA GANHAR PONTOS ======== */
 
 body {
   margin: 0;
@@ -1182,6 +1182,12 @@ body {
   padding: 16px;
   box-shadow: var(--card-shadow);
   min-height: 150px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.mission-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .mission-card-info {
@@ -1254,8 +1260,7 @@ body {
     max-width: none;
   }
 
-  .page-ganhar-pontos .content-body,
-  .page-ganhar-pontos .navbar {
+  .page-ganhar-pontos .content-body {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
@@ -1265,6 +1270,7 @@ body {
   }
 
   .navbar {
+    position: static;
     max-width: 100%;
   }
 
@@ -2065,48 +2071,29 @@ body {
 
 /* ======== ESTILOS DA PÁGINA DE RANKING INDIVIDUAL ======== */
 
-body {
-  margin: 0;
-  background-color: #fffcf8;
-  font-family: "Inter", Helvetica, sans-serif;
-}
-
 .page-ranking-individual .page-container {
   width: 100%;
   max-width: 390px;
   margin: 0 auto;
 }
 
-.ranking-header {
+.page-ranking-individual .ranking-header {
   background: linear-gradient(180deg, #f6c54d 0%, #e6b547 100%);
   color: white;
   padding: 16px 20px 24px;
 }
 
-.top-navigation {
+.page-ranking-individual .top-navigation {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
 }
 
-.back-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
+.page-ranking-individual .page-title {
+  color: white;
 }
 
-.page-title {
-  flex-grow: 1;
-  text-align: center;
-  font-family: var(--title-title-3-semibold-font-family);
-  font-weight: var(--title-title-3-semibold-font-weight);
-  font-size: var(--title-title-3-semibold-font-size);
-  margin: 0;
-  padding-right: 32px;
-}
-
-.user-status-card {
+.page-ranking-individual .user-status-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2116,13 +2103,13 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.user-info {
+.page-ranking-individual .user-info {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.user-avatar {
+.page-ranking-individual .user-avatar {
   width: 48px;
   height: 48px;
   background: rgba(255, 255, 255, 0.3);
@@ -2132,21 +2119,21 @@ body {
   justify-content: center;
 }
 
-.user-rank {
+.page-ranking-individual .user-rank {
   font-family: var(--body-body-bold-font-family);
   font-weight: var(--body-body-bold-font-weight);
   font-size: var(--body-body-bold-font-size);
   margin: 0 0 4px 0;
 }
 
-.user-points {
+.page-ranking-individual .user-points {
   font-family: var(--caption-caption-1-medium-font-family);
   font-size: var(--caption-caption-1-medium-font-size);
   opacity: 0.9;
   margin: 0;
 }
 
-.rescue-points-btn {
+.page-ranking-individual .rescue-points-btn {
   background: rgba(255, 255, 255, 0.3);
   border: none;
   border-radius: 20px;
@@ -2158,14 +2145,14 @@ body {
   text-decoration: none;
 }
 
-.main-content {
+.page-ranking-individual .main-content {
   padding: 24px 20px;
   background-color: #fffcf8;
   transform: translateY(-20px);
   border-radius: 24px 24px 0 0;
 }
 
-.mission-progress {
+.page-ranking-individual .mission-progress {
   background: white;
   border-radius: 16px;
   padding: 16px 20px;
@@ -2173,7 +2160,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.mission-info {
+.page-ranking-individual .mission-info {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -2182,13 +2169,13 @@ body {
   font-weight: 500;
 }
 
-.mission-progress-text {
+.page-ranking-individual .mission-progress-text {
   font-size: 12px;
   color: var(--color-neutral-60);
   margin: 0;
 }
 
-.ranking-tabs {
+.page-ranking-individual .ranking-tabs {
   display: flex;
   background: var(--color-neutral-20);
   border-radius: 8px;
@@ -2196,24 +2183,7 @@ body {
   margin-bottom: 32px;
 }
 
-.tab-button {
-  flex: 1;
-  background: none;
-  border: none;
-  padding: 12px 16px;
-  font-family: var(--caption-caption-1-medium-font-family);
-  font-weight: 500;
-  color: var(--color-neutral-60);
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.tab-button.active {
-  background: var(--color-gold-30);
-  color: white;
-}
-
-.benefits-title {
+.page-ranking-individual .benefits-title {
   font-family: var(--body-body-bold-font-family);
   font-weight: var(--body-body-bold-font-weight);
   color: var(--color-neutral-90);
@@ -2221,18 +2191,18 @@ body {
   margin: 0 0 24px 0;
 }
 
-.benefits-grid {
+.page-ranking-individual .benefits-grid {
   display: grid;
   gap: 24px;
 }
 
-.benefit-item {
+.page-ranking-individual .benefit-item {
   display: flex;
   gap: 16px;
   align-items: flex-start;
 }
 
-.benefit-icon {
+.page-ranking-individual .benefit-icon {
   width: 48px;
   height: 48px;
   border-radius: 12px;
@@ -2243,14 +2213,14 @@ body {
   background-color: var(--color-gold-10);
 }
 
-.benefit-title {
+.page-ranking-individual .benefit-title {
   font-family: var(--body-body-medium-font-family);
   font-weight: 500;
   color: var(--color-neutral-90);
   margin: 0 0 4px 0;
 }
 
-.benefit-description {
+.page-ranking-individual .benefit-description {
   font-family: var(--caption-caption-1-reguler-font-family);
   font-size: 14px;
   color: var(--color-neutral-60);
@@ -2259,32 +2229,32 @@ body {
 }
 
 @media (min-width: 768px) {
-  body {
+  .page-ranking-individual {
     background-color: #e6b547;
   }
 
-  .page-container {
+  .page-ranking-individual .page-container {
     max-width: none;
   }
 
-  .ranking-header {
+  .page-ranking-individual .ranking-header {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .header-content,
-  .main-content {
+  .page-ranking-individual .header-content,
+  .page-ranking-individual .main-content {
     max-width: 900px;
     margin: 0 auto;
     width: 100%;
   }
 
-  .main-content {
+  .page-ranking-individual .main-content {
     transform: translateY(0);
     border-radius: 0;
   }
 
-  .benefits-grid {
+  .page-ranking-individual .benefits-grid {
     grid-template-columns: 1fr 1fr;
   }
 }

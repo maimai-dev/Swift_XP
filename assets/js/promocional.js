@@ -7,8 +7,21 @@ document.addEventListener('DOMContentLoaded', function () {
       const code = promoInput.value.trim().toUpperCase();
 
       if (code === 'SWIFTXP2025') {
-        showToast('Código aplicado! Você ganhou 500 pontos!');
+
+        const currentPoints = parseInt(localStorage.getItem('userPoints') || '0');
+        const pointsToAdd = 500; 
+
+        const newTotalPoints = currentPoints + pointsToAdd;
+
+        localStorage.setItem('userPoints', newTotalPoints);
+
+        showToast(`Código aplicado! Você ganhou ${pointsToAdd} pontos!`);
         promoInput.value = ''; 
+
+        if (typeof updateUserDataDisplay === 'function') {
+          updateUserDataDisplay();
+        }
+
       } else if (code === '') {
         showToast('Por favor, insira um código.');
       } else {

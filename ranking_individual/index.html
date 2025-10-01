@@ -11,22 +11,53 @@
       <header class="ranking-header">
         <div class="header-content">
           <nav class="top-navigation">
-            <button onclick="history.back()" class="back-button" aria-label="Voltar">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <button
+              onclick="history.back()"
+              class="back-button"
+              aria-label="Voltar"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 18L9 12L15 6"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </button>
             <h1 class="page-title">Ranking</h1>
           </nav>
           <section class="user-status-card">
             <div class="user-info">
               <div class="user-avatar">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" fill="white" /></svg>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z"
+                    fill="white"
+                  />
+                </svg>
               </div>
               <div class="user-details">
                 <h2 class="user-rank">Ouro</h2>
                 <p class="user-points">1.500 Pontos</p>
               </div>
             </div>
-            <a href="../pontos/index.html" class="rescue-points-btn">Resgatar Pontos</a>
+            <a href="../pontos/index.html" class="rescue-points-btn"
+              >Resgatar Pontos</a
+            >
           </section>
         </div>
       </header>
@@ -34,44 +65,29 @@
       <main class="main-content">
         <section class="mission-progress">
           <div class="mission-info">
-            <p class="mission-text">Complete 8 missões para chegar ao ranking Platina</p>
+            <p class="mission-text">
+              Complete 8 missões para chegar ao ranking Platina
+            </p>
           </div>
-          <p class="mission-progress-text">Você já completou 4 missões, continue assim!</p>
+          <p class="mission-progress-text">
+            Você já completou 4 missões, continue assim!
+          </p>
         </section>
 
         <nav class="ranking-tabs">
-          <button class="tab-button">Prata</button>
-          <button class="tab-button active">Ouro</button>
-          <button class="tab-button">Platina</button>
+          <button class="tab-button" id="tab-prata">Prata</button>
+          <button class="tab-button active" id="tab-ouro">Ouro</button>
+          <button class="tab-button" id="tab-platina">Platina</button>
         </nav>
 
         <section class="benefits-section">
-          <h3 class="benefits-title">Benefícios do ranking</h3>
-          <div class="benefits-grid">
-            <article class="benefit-item">
-              <div class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 16L12 19L15 16" fill="#D6A53D"/><rect x="3" y="4" width="18" height="12" rx="2" fill="#D6A53D" /></svg></div>
-              <div class="benefit-content">
-                <h4 class="benefit-title">Certificado Digital Swift XP Ouro</h4>
-                <p class="benefit-description">Para reforçar a conquista, válido para o currículo interno de empresa.</p>
-              </div>
-            </article>
-            <article class="benefit-item">
-              <div class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" fill="#D6A53D" /><path d="M12 6V12L16 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-              <div class="benefit-content">
-                <h4 class="benefit-title">Vale-Folga Flexível</h4>
-                <p class="benefit-description">Banco de horas com 1 folga extra a cada 2 meses (com aprovação do gestor).</p>
-              </div>
-            </article>
-            <article class="benefit-item">
-              <div class="benefit-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L14 6H18L15 9L16 13L12 11L8 13L9 9L6 6H10L12 2Z" fill="#D6A53D" /><rect x="3" y="6" width="18" height="12" rx="2" fill="#D6A53D" /></svg></div>
-              <div class="benefit-content">
-                <h4 class="benefit-title">Sorteio Exclusivo</h4>
-                <p class="benefit-description">Participação em sorteios de prémios mensais só para quem está no nível Ouro ou superior.</p>
-              </div>
-            </article>
-          </div>
+          <h3 class="benefits-title" id="benefits-title">
+            Benefícios do ranking
+          </h3>
+          <div class="benefits-grid" id="benefits-grid"></div>
         </section>
       </main>
     </div>
+    <script src="../assets/js/ranking_tabs.js"></script>
   </body>
 </html>
