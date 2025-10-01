@@ -1945,7 +1945,7 @@ body {
   font-family: "Inter", Helvetica, sans-serif;
 }
 
-.page-container {
+.page-ranking-individual .page-container {
   width: 100%;
   max-width: 390px;
   margin: 0 auto;
@@ -2333,12 +2333,6 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 20px;
-  }
-
-  .page-ranking-lojas .navbar {
-    max-width: none !important;
-    margin: 0 auto !important;
-    position: static !important;
   }
 
   .nav-button {
