@@ -2814,3 +2814,75 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+
+/* ======== ESTILOS DA PÁGINA DE CONFIGURAÇÕES ======== */
+.settings-section {
+  padding: 24px 20px;
+}
+.settings-group {
+  background-color: white;
+  border-radius: 12px;
+}
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid var(--color-neutral-20);
+}
+.setting-item:last-child {
+  border-bottom: none;
+}
+.setting-item span {
+  font-size: 16px;
+  color: var(--color-neutral-80);
+}
+
+/* Estilos do Interruptor (Toggle Switch) */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #ff8000;
+}
+input:disabled + .slider {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
