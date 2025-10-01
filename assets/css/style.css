@@ -2740,3 +2740,41 @@ body {
 .static-content p {
     margin-bottom: 16px;
 }
+
+/* ======== ESTILOS DA PÁGINA DE CÓDIGO PROMOCIONAL ======== */
+.promo-code-container {
+  padding: 24px 20px;
+  text-align: center;
+  color: var(--color-neutral-60);
+}
+
+.promo-code-container p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.promo-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.promo-code-input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid var(--color-neutral-30);
+  border-radius: 12px;
+}
+
+.promo-code-button {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 60px;
+  background-color: #ff8000;
+  color: white;
+  cursor: pointer;
+}
