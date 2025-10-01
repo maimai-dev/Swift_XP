@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
             confirmButton.style.display = 'none';
             cancelButton.textContent = 'Fechar';
         }
-
         modal.style.display = 'flex';
     }
 
@@ -52,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
     confirmButton.addEventListener('click', function () {
         const currentPoints = parseInt(localStorage.getItem('userPoints') || '0');
         const rewardCost = parseInt(currentReward.querySelector('.reward-points').textContent.replace(/\./g, '').replace(' Pontos', ''));
-
         const newTotalPoints = currentPoints - rewardCost;
 
         localStorage.setItem('userPoints', newTotalPoints);

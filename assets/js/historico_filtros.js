@@ -3,12 +3,26 @@ document.addEventListener('DOMContentLoaded', function () {
     const filterEarned = document.getElementById('filter-earned');
     const filterRedeemed = document.getElementById('filter-redeemed');
     const historyItems = document.querySelectorAll('.history-item');
+    const emptyState = document.getElementById('empty-history-state');
     const tabs = [filterAll, filterEarned, filterRedeemed];
 
-    function setActiveTab(activeTab) {
-        tabs.forEach(tab => {
-            tab.classList.remove('active');
+    function checkEmptyState() {
+        let visibleItems = 0;
+        historyItems.forEach(item => {
+            if (item.style.display !== 'none') {
+                visibleItems++;
+            }
         });
+
+        if (visibleItems === 0) {
+            emptyState.style.display = 'block';
+        } else {
+            emptyState.style.display = 'none';
+        }
+    }
+
+    function setActiveTab(activeTab) {
+        tabs.forEach(tab => tab.classList.remove('active'));
         activeTab.classList.add('active');
     }
 
@@ -17,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         historyItems.forEach(item => {
             item.style.display = 'flex';
         });
+        checkEmptyState(); 
     });
 
     filterEarned.addEventListener('click', function () {
@@ -28,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 item.style.display = 'none';
             }
         });
+        checkEmptyState(); 
     });
 
     filterRedeemed.addEventListener('click', function () {
@@ -39,5 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 item.style.display = 'none';
             }
         });
+        checkEmptyState(); 
     });
+
+    checkEmptyState();
 });
