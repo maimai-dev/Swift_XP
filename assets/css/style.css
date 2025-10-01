@@ -368,6 +368,14 @@ body {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
 }
 
+.mission-card-small.completed {
+  opacity: 0.6;
+  background-color: var(--color-neutral-10);
+}
+.mission-card-small.completed .progress-bar {
+  background-color: #28a745; 
+}
+
 .mission-points {
   display: inline-block;
   background-color: var(--color-secondary-20);
