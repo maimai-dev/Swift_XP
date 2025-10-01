@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Editar Gênero - Swift XP</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="page-header">
+        <button onclick="history.back()" class="back-button" aria-label="Voltar">
+          <img src="../assets/images/icons/icon24=arrow-left.svg" alt="" />
+        </button>
+        <h1 class="page-title">Editar Gênero</h1>
+      </header>
+
+      <main class="main-content">
+        <form id="edit-gender-form" class="edit-form">
+          <div class="form-group">
+            <label for="gender-select">Gênero</label>
+            <select id="gender-select" class="form-input">
+              <option value="Masculino">Masculino</option>
+              <option value="Feminino">Feminino</option>
+              <option value="Outro">Outro</option>
+              <option value="Prefiro não informar">Prefiro não informar</option>
+            </select>
+          </div>
+          <button type="submit" class="cta-button">Salvar Alterações</button>
+        </form>
+      </main>
+    </div>
+    <script src="../assets/js/editar_perfil.js"></script>
+  </body>
+</html>

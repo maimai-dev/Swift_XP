@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
           birthDate: '12 Junho 2004',
           phone: '+55 11 98996 1425',
           email: 'lucas.oliveira23@swift.com.br',
-          gender: 'Masculino'
+          gender: 'Masculino',
+          userPoints: 1500
         };
 
         for (const key in userData) {
