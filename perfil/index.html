@@ -25,16 +25,29 @@
           <div class="profile-details">
             <div class="avatar-area">
               <img
+                id="avatar-image"
                 class="avatar"
                 src="/assets/images/avatares/avatar.png"
                 alt="Foto de perfil do usuário Lucas Oliveira"
               />
-              <button class="change-photo-button" type="button">
-                Mudar foto de perfil
-              </button>
+              <div class="avatar-actions">
+                <button
+                  id="change-photo-button"
+                  class="change-photo-button"
+                  type="button"
+                >
+                  Mudar foto de perfil
+                </button>
+                <input
+                  type="file"
+                  id="file-input"
+                  accept="image/*"
+                  style="display: none"
+                />
+              </div>
             </div>
             <div class="info-group">
-              <a href="#" class="info-row">
+              <a href="../editar-nome/index.html" class="info-row">
                 <span class="info-key">Nome completo</span>
                 <div class="info-value-wrapper">
                   <span class="info-value">Lucas Oliveira</span>
@@ -57,14 +70,13 @@
             </div>
           </div>
         </section>
-
         <section class="info-section">
           <h2 class="section-title">INFORMAÇÕES PESSOAIS</h2>
           <div class="info-group">
             <div class="info-row">
               <span class="info-key">Código de matrícula</span>
               <div class="info-value-wrapper">
-                <span id="matricula-code" class="info-value">67776</span>
+                <span id="matricula-display" class="info-value">67776</span>
                 <button
                   id="copy-button"
                   aria-label="Copiar código de matrícula"
@@ -79,7 +91,10 @@
             <div class="info-row">
               <span class="info-key">Data de nascimento</span>
               <div class="info-value-wrapper">
-                <time class="info-value" datetime="2004-06-12"
+                <time
+                  id="birthdate-display"
+                  class="info-value"
+                  datetime="2004-06-12"
                   >12 Junho 2004</time
                 >
                 <button aria-label="Informações sobre data de nascimento">
@@ -93,7 +108,9 @@
             <a href="#" class="info-row">
               <span class="info-key">Número de telefone</span>
               <div class="info-value-wrapper">
-                <span class="info-value">+55 11 98996 1425</span>
+                <span id="phone-display" class="info-value"
+                  >+55 11 98996 1425</span
+                >
                 <img
                   src="/assets/images/icons/icon24=chevron-right.svg"
                   alt="Editar"
@@ -103,7 +120,9 @@
             <a href="#" class="info-row">
               <span class="info-key">Email</span>
               <div class="info-value-wrapper">
-                <span class="info-value">lucas.oliveira23@swift.com.br</span>
+                <span id="email-display" class="info-value"
+                  >lucas.oliveira23@swift.com.br</span
+                >
                 <img
                   src="/assets/images/icons/icon24=chevron-right.svg"
                   alt="Editar"
@@ -113,7 +132,7 @@
             <a href="#" class="info-row">
               <span class="info-key">Gênero</span>
               <div class="info-value-wrapper">
-                <span class="info-value">Masculino</span>
+                <span id="gender-display" class="info-value">Masculino</span>
                 <img
                   src="/assets/images/icons/icon24=chevron-right.svg"
                   alt="Editar"
@@ -126,5 +145,6 @@
     </div>
     <script src="../assets/js/toast.js"></script>
     <script src="../assets/js/perfil_interacoes.js"></script>
+    <script src="../assets/js/editar_perfil.js"></script>
   </body>
 </html>
