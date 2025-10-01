@@ -16,10 +16,23 @@
       </header>
 
       <main class="main-content">
+        <nav class="tabs" role="tablist">
+          <button id="filter-all" class="tab-button active" role="tab">
+            Todos
+          </button>
+          <button id="filter-earned" class="tab-button" role="tab">
+            Ganhos
+          </button>
+          <button id="filter-redeemed" class="tab-button" role="tab">
+            Resgatados
+          </button>
+        </nav>
         <section class="history-list">
           <div class="history-item earned">
             <div class="history-details">
-              <span class="history-title">Missão: Segurança em Primeiro Lugar</span>
+              <span class="history-title"
+                >Missão: Segurança em Primeiro Lugar</span
+              >
               <span class="history-date">27/09/2025</span>
             </div>
             <span class="history-points">+500</span>
@@ -41,7 +54,7 @@
             <span class="history-points">+250</span>
           </div>
 
-           <div class="history-item expired">
+          <div class="history-item expired">
             <div class="history-details">
               <span class="history-title">Pontos Expirados</span>
               <span class="history-date">31/12/2024</span>
@@ -52,11 +65,30 @@
       </main>
 
       <nav class="navbar">
-        <a href="../inicial/index.html" class="nav-button"><img src="../assets/images/icons/icon24=home.svg" alt="" /><span>Início</span></a>
-        <a href="../pontos/index.html" class="nav-button active"><img src="../assets/images/icons/icon24=reward_pontos.svg" alt="" /><span>Recompensas</span></a>
-        <a href="../missoes/index.html" class="nav-button"><img src="../assets/images/icons/icon24=challenge.svg" alt="" /><span>Missões</span></a>
-        <a href="../configuracao/index.html" class="nav-button"><img src="../assets/images/icons/icon24=profile.svg" alt="" /><span>Perfil</span></a>
+        <a href="../inicial/index.html" class="nav-button"
+          ><img
+            src="../assets/images/icons/icon24=home_config.svg"
+            alt=""
+          /><span>Início</span></a
+        >
+        <a href="../pontos/index.html" class="nav-button active"
+          ><img
+            src="../assets/images/icons/icon24=reward_pontos.svg"
+            alt=""
+          /><span>Recompensas</span></a
+        >
+        <a href="../missoes/index.html" class="nav-button"
+          ><img src="../assets/images/icons/icon24=challenge.svg" alt="" /><span
+            >Missões</span
+          ></a
+        >
+        <a href="../configuracao/index.html" class="nav-button"
+          ><img src="../assets/images/icons/icon24=profile_pontos.svg" alt="" /><span
+            >Perfil</span
+          ></a
+        >
       </nav>
     </div>
+    <script src="../assets/js/historico_filtros.js"></script>
   </body>
 </html>
