@@ -1,169 +1,207 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Ranking de Lojas - Swift XP</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta charset="utf-8" />
-  <title>Ranking de Lojas - Swift XP</title>
-  <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
+  <body>
+    <div class="page-container">
+      <header class="page-header">
+        <button
+          onclick="history.back()"
+          class="back-button"
+          aria-label="Voltar"
+        >
+          <img src="/assets/images/icons/icon24=arrow-left.svg" alt="" />
+        </button>
+        <h1 class="page-title">Ranking de Lojas</h1>
+      </header>
 
-<body>
-  <div class="page-container">
-    <header class="page-header">
-      <a href="../inicial/index.html" class="back-button" aria-label="Voltar">
-      </a>
-      <h1 class="page-title">Ranking de Lojas</h1>
-    </header>
+      <div class="ranking-intro-banner">
+        <p>
+          Quando a equipe joga junto, todo mundo ganha! 🏅 Veja como sua loja
+          está se saindo e ajude o time a conquistar os primeiros lugares. 🙌
+        </p>
+      </div>
 
-    <div class="ranking-intro-banner">
-      <p>Quando a equipe joga junto, todo mundo ganha! 🏅 Veja como sua loja está se saindo e ajude o time a conquistar
-        os primeiros lugares. 🙌</p>
-    </div>
-
-    <main class="main-content">
-      <section class="search-section">
-        <div class="search-and-filter">
-          <div class="search-bar-container">
-            <input type="search" placeholder="Pesquisar..." class="search-input" />
+      <main class="main-content">
+        <section class="search-section">
+          <div class="search-and-filter">
+            <div class="search-bar-container">
+              <input
+                type="search"
+                placeholder="Pesquisar..."
+                class="search-input"
+                id="search-input"
+              />
+            </div>
+            <button class="filter-button" aria-label="Filtrar ranking">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 12H19M3 6H21M7 18H17"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
           </div>
-          <button class="filter-button" aria-label="Filtrar ranking">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 12H19M3 6H21M7 18H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </button>
-        </div>
-      </section>
-      <section class="content-section">
-        <h2 class="section-title">Destaques da Semana 🔝</h2>
-        <div class="highlights-table-container">
-          <table class="highlights-table">
-            <tbody>
-              <tr>
-                <td>🥇</td>
-                <td>Loja Morumbi</td>
-                <td><strong>8.540 pontos</strong></td>
-              </tr>
-              <tr>
-                <td>🥈</td>
-                <td>Loja Campo Grande</td>
-                <td><strong>8.120 pontos</strong></td>
-              </tr>
-              <tr>
-                <td>🥉</td>
-                <td>Loja Lapa</td>
-                <td><strong>7.980 pontos</strong></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+        </section>
+        <section class="content-section">
+          <h2 class="section-title">Destaques da Semana 🔝</h2>
+          <div class="highlights-table-container">
+            <table class="highlights-table">
+              <tbody>
+                <tr>
+                  <td>🥇</td>
+                  <td>Loja Morumbi</td>
+                  <td><strong>8.540 pontos</strong></td>
+                </tr>
+                <tr>
+                  <td>🥈</td>
+                  <td>Loja Campo Grande</td>
+                  <td><strong>8.120 pontos</strong></td>
+                </tr>
+                <tr>
+                  <td>🥉</td>
+                  <td>Loja Lapa</td>
+                  <td><strong>7.980 pontos</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-      <section class="content-section">
-        <h2 class="section-title">Reconhecimento Especial 🌠</h2>
-        <div class="special-recognition">
-          <p>A Loja Lapa foi destaque do mês por bater 100% das metas e ter 95% de engajamento no app. Parabéns, equipe!
-          </p>
-        </div>
-      </section>
-      <section class="content-section">
-        <div class="section-header">
-          <h2 class="section-title">🏆 Ranking Mensal - Top 10 Lojas</h2>
-          <a href="#" class="see-all-link">Ver ranking completo</a>
-        </div>
+        <section class="content-section">
+          <h2 class="section-title">Reconhecimento Especial 🌠</h2>
+          <div class="special-recognition">
+            <p>
+              A Loja Lapa foi destaque do mês por bater 100% das metas e ter 95%
+              de engajamento no app. Parabéns, equipe!
+            </p>
+          </div>
+        </section>
+        <section class="content-section">
+          <div class="section-header">
+            <h2 class="section-title">🏆 Ranking Mensal - Top 10 Lojas</h2>
+            <a href="#" class="see-all-link">Ver ranking completo</a>
+          </div>
 
-        <div class="ranking-table-container">
-          <table class="ranking-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Loja</th>
-                <th>Pontuação</th>
-                <th>Progresso</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span>🥇</span></td>
-                <td>Loja Morumbi</td>
-                <td>8.540</td>
-                <td><span class="progress-tag up">🔥 Top 1!</span></td>
-              </tr>
-              <tr>
-                <td><span>🥈</span></td>
-                <td>Loja Campo Grande</td>
-                <td>8.120</td>
-                <td><span class="progress-tag up">▲ +2</span></td>
-              </tr>
-              <tr>
-                <td><span>🥉</span></td>
-                <td>Loja Lapa</td>
-                <td>7.980</td>
-                <td><span class="progress-tag down">▼ -1</span></td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Loja Pinheiros</td>
-                <td>7.450</td>
-                <td>
-                  <span class="progress-tag new">🆕 Entrou no Top 5</span>
-                </td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Loja Santo Amaro</td>
-                <td>7.410</td>
-                <td><span class="progress-tag up">▲ +1</span></td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Loja Brasília</td>
-                <td>7.080</td>
-                <td><span class="progress-tag down">▼ -2</span></td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Loja Moema</td>
-                <td>6.980</td>
-                <td><span class="progress-tag same">▶ 0</span></td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>Loja Curitiba</td>
-                <td>6.850</td>
-                <td><span class="progress-tag up">▲ +1</span></td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>Loja Campinas</td>
-                <td>6.740</td>
-                <td><span class="progress-tag down">▼ -1</span></td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>Loja Osasco</td>
-                <td>6.610</td>
-                <td>
-                  <span class="progress-tag new">🆕 Nova no ranking</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+          <div class="ranking-table-container">
+            <table class="ranking-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Loja</th>
+                  <th>Pontuação</th>
+                  <th>Progresso</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span>🥇</span></td>
+                  <td>Loja Morumbi</td>
+                  <td>8.540</td>
+                  <td><span class="progress-tag up">🔥 Top 1!</span></td>
+                </tr>
+                <tr>
+                  <td><span>🥈</span></td>
+                  <td>Loja Campo Grande</td>
+                  <td>8.120</td>
+                  <td><span class="progress-tag up">▲ +2</span></td>
+                </tr>
+                <tr>
+                  <td><span>🥉</span></td>
+                  <td>Loja Lapa</td>
+                  <td>7.980</td>
+                  <td><span class="progress-tag down">▼ -1</span></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Loja Pinheiros</td>
+                  <td>7.450</td>
+                  <td>
+                    <span class="progress-tag new">🆕 Entrou no Top 5</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Loja Santo Amaro</td>
+                  <td>7.410</td>
+                  <td><span class="progress-tag up">▲ +1</span></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Loja Brasília</td>
+                  <td>7.080</td>
+                  <td><span class="progress-tag down">▼ -2</span></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Loja Moema</td>
+                  <td>6.980</td>
+                  <td><span class="progress-tag same">▶ 0</span></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Loja Curitiba</td>
+                  <td>6.850</td>
+                  <td><span class="progress-tag up">▲ +1</span></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Loja Campinas</td>
+                  <td>6.740</td>
+                  <td><span class="progress-tag down">▼ -1</span></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Loja Osasco</td>
+                  <td>6.610</td>
+                  <td>
+                    <span class="progress-tag new">🆕 Nova no ranking</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
 
       <nav class="navbar">
-        <a href="../inicial/index.html" class="nav-button"><img src="../assets/images/icons/icon24=home.svg"
-            alt="" /><span>Início</span></a>
-        <a href="../pontos/index.html" class="nav-button"><img src="../assets/images/icons/icon24=reward.svg"
-            alt="" /><span>Recompensas</span></a>
-        <a href="../missoes/index.html" class="nav-button"><img src="../assets/images/icons/icon24=challenge.svg"
-            alt="" /><span>Missões</span></a>
-        <a href="../configuracao/index.html" class="nav-button"><img
-            src="../assets/images/icons/icon24=profile_pontos.svg" alt="" /><span>Perfil</span></a>
+        <a href="../inicial/index.html" class="nav-button"
+          ><img src="../assets/images/icons/icon24=home.svg" alt="" /><span
+            >Início</span
+          ></a
+        >
+        <a href="../pontos/index.html" class="nav-button"
+          ><img src="../assets/images/icons/icon24=reward.svg" alt="" /><span
+            >Recompensas</span
+          ></a
+        >
+        <a href="../missoes/index.html" class="nav-button"
+          ><img src="../assets/images/icons/icon24=challenge.svg" alt="" /><span
+            >Missões</span
+          ></a
+        >
+        <a href="../configuracao/index.html" class="nav-button"
+          ><img
+            src="../assets/images/icons/icon24=profile_pontos.svg"
+            alt=""
+          /><span>Perfil</span></a
+        >
       </nav>
-  </div>
-</body>
-
+    </div>
+  </body>
+  <script src="../assets/js/ranking_lojas.js"></script>
 </html>

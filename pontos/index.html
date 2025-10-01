@@ -10,13 +10,13 @@
     <div class="page-container">
       <header class="points-header">
         <div class="header-top">
-          <a
-            href="../inicial/index.html"
+          <button
+            onclick="history.back()"
             class="back-button"
             aria-label="Voltar"
           >
             <img src="/assets/images/icons/icon24=arrow-left.svg" alt="" />
-          </a>
+          </button>
           <h1 class="page-title">Meus Pontos e Recompensas</h1>
         </div>
         <div class="points-summary">
@@ -27,11 +27,13 @@
               alt="Ícone de pontos"
             />
             <p class="points-balance">
-              <span class="points-amount">1.500</span>
+              <span id="user-points-balance" class="points-amount">1.500</span>
               <span class="points-label">Pontos</span>
             </p>
           </div>
-          <a href="../historico_pontos/index.html" class="points-history-link">Histórico de Pontos</a>
+          <a href="../historico_pontos/index.html" class="points-history-link"
+            >Histórico de Pontos</a
+          >
           <p class="points-expiring">200 pontos expirando em 31/12/2025</p>
         </div>
       </header>
@@ -164,21 +166,47 @@
 
       <nav class="navbar">
         <a href="../inicial/index.html" class="nav-button"
-          ><img src="/assets/images/icons/icon24=home_config.svg" alt="" /><span>Início</span></a
+          ><img src="/assets/images/icons/icon24=home_config.svg" alt="" /><span
+            >Início</span
+          ></a
         >
         <a
           href="../pontos/index.html"
           class="nav-button active"
           aria-current="page"
-          ><img src="/assets/images/icons/icon24=reward_pontos.svg" alt="" /><span>Recompensas</span></a
+          ><img
+            src="/assets/images/icons/icon24=reward_pontos.svg"
+            alt=""
+          /><span>Recompensas</span></a
         >
         <a href="../missoes/index.html" class="nav-button"
-          ><img src="/assets/images/icons/icon24=challenge.svg" alt="" /><span>Missões</span></a
+          ><img src="/assets/images/icons/icon24=challenge.svg" alt="" /><span
+            >Missões</span
+          ></a
         >
         <a href="../configuracao/index.html" class="nav-button"
-          ><img src="/assets/images/icons/icon24=profile_pontos.svg" alt="" /><span>Perfil</span></a
+          ><img
+            src="/assets/images/icons/icon24=profile_pontos.svg"
+            alt=""
+          /><span>Perfil</span></a
         >
       </nav>
     </div>
   </body>
+  <div id="confirmation-modal" class="modal-overlay" style="display: none">
+    <div class="modal-content">
+      <h2 id="modal-title">Confirmar Resgate</h2>
+      <p id="modal-text">Você deseja realmente resgatar este item?</p>
+      <div class="modal-buttons">
+        <button id="cancel-button" class="modal-button secondary">
+          Cancelar
+        </button>
+        <button id="confirm-button" class="modal-button primary">
+          Confirmar
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/js/toast.js"></script>
+  <script src="../assets/js/modal_pontos.js"></script>
 </html>
