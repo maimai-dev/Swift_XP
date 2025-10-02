@@ -130,19 +130,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  const logoutButton = document.getElementById("logout-button");
+  const logoutButton = document.getElementById('logout-button');
   if (logoutButton) {
-    logoutButton.addEventListener("click", function (event) {
-      event.preventDefault();
+    const modal = document.getElementById('confirmation-modal');
+    const cancelButton = document.getElementById('cancel-button');
+    const confirmButton = document.getElementById('confirm-button');
 
-      const userConfirmed = confirm(
-        "Tem a certeza de que deseja sair? Todas as alterações não salvas serão perdidas."
-      );
-
-      if (userConfirmed) {
-        localStorage.clear();
-        window.location.href = "../../index.html";
+    logoutButton.addEventListener('click', function(event) {
+      event.preventDefault(); 
+      if (modal) {
+        modal.style.display = 'flex';
       }
     });
+
+    if (cancelButton) {
+      cancelButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+    }
+
+    if (confirmButton) {
+      confirmButton.addEventListener('click', function() {
+        localStorage.clear();
+        window.location.href = '../index.html'; 
+      });
+    }
+
+    if (modal) {
+        modal.addEventListener('click', function (event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    }
   }
 });
