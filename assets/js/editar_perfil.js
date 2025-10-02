@@ -7,7 +7,7 @@ function updateUserDataDisplay() {
     phone: ["phone-display", "user-phone-header"],
     email: ["email-display"],
     gender: ["gender-display"],
-    userPoints: ['user-points-balance', 'user-points-home', 'user-points-config', 'user-points-ganhar']
+    userPoints: ['user-points-balance', 'user-points-home', 'user-points-config', 'user-points-ganhar', 'user-points-ranking']
   };
   for (const key in elementsToUpdate) {
     const storedValue = localStorage.getItem(key);

@@ -1215,6 +1215,7 @@ body {
 }
 
 .mission-button {
+  display: block; 
   width: 100%;
   padding: 7px 16px;
   background: none;
@@ -1225,6 +1226,8 @@ body {
   font-size: var(--footnote-footnote-medium-font-size);
   font-weight: var(--footnote-footnote-medium-font-weight);
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
 }
 
 .navbar {
@@ -1885,6 +1888,19 @@ body {
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.reward-card.redeemed {
+  transition: all 0.5s ease-in-out;
+  transform: scale(0.95);
+  opacity: 0;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  border: none;
 }
 
 .navbar {

@@ -48,24 +48,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
     cancelButton.addEventListener('click', closeModal);
 
-    confirmButton.addEventListener('click', function () {
-        const currentPoints = parseInt(localStorage.getItem('userPoints') || '0');
-        const rewardCost = parseInt(currentReward.querySelector('.reward-points').textContent.replace(/\./g, '').replace(' Pontos', ''));
-        const newTotalPoints = currentPoints - rewardCost;
 
-        localStorage.setItem('userPoints', newTotalPoints);
+confirmButton.addEventListener('click', function () {
+    const currentPoints = parseInt(localStorage.getItem('userPoints') || '0');
+    const rewardCost = parseInt(currentReward.querySelector('.reward-points').textContent.replace(/\./g, '').replace(' Pontos', ''));
+    const newTotalPoints = currentPoints - rewardCost;
 
-        if (typeof updateUserDataDisplay === 'function') {
-            updateUserDataDisplay();
-        }
+    localStorage.setItem('userPoints', newTotalPoints);
 
-        const redeemButton = currentReward.querySelector('.redeem-button');
-        redeemButton.textContent = 'Resgatado';
-        redeemButton.disabled = true;
+    if (typeof updateUserDataDisplay === 'function') {
+        updateUserDataDisplay();
+    }
 
-        closeModal();
-        showToast('Prêmio resgatado com sucesso!');
-    });
+    currentReward.classList.add('redeemed');
+
+    setTimeout(() => {
+        currentReward.style.display = 'none';
+    }, 500); 
+
+    closeModal();
+    showToast('Prêmio resgatado com sucesso!');
+});
 
     modal.addEventListener('click', function (event) {
         if (event.target === modal) {
